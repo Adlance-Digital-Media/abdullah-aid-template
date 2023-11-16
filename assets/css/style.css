@@ -1,0 +1,76 @@
+/* CSS Variables */
+
+:root {
+
+    --aa-primary: #10AE88;
+    --aa-secondary: #002740;
+    --aa-white: #fff;
+}
+
+/* AREA FONT */
+
+@font-face {
+    font-family: 'Area';
+    src: url(/assets/fonts/area/Area-Bold.woff);
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header_section {
+    background-image: radial-gradient(75% 220% at 50% 50%, #10AE88 0%, #07585E 0%, #002740 100%);
+}
+
+.logo_container {
+    min-height: 45vh;
+}
+
+.logo_container h1 {
+    font-weight: 600;
+    font-size: 2.5rem;
+    width: 40%;
+    line-height: 1;
+}
+
+.instant_donate {
+    font-size: 20px;
+
+}
+
+.aa_time {
+    font-size: 1.6rem;
+    display: block;
+    font-weight: 600;
+    color: #fff;
+}
+
+.aa_islamic_time {
+    font-size: 15px;
+    color: var(--aa-white);
+}
+
+.nav_container a {
+    text-decoration: none;
+    color: var(--aa-white);
+    font-size: 22px;
+    transition: 0.7s;
+}
+
+.nav_container a:hover {
+    color: var(--aa-primary);
+    transition: 0.7s;
+}
+
+.header_social_icons a {
+    margin-right: 15px;
+    color: var(--aa-white);
+    font-size: 1.2rem;
+}
+
+.header_social_icons a:hover{
+    color: var(--aa-primary);
+}
