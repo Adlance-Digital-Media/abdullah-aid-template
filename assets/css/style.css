@@ -11,7 +11,11 @@
 
 @font-face {
     font-family: 'Area';
-    src: url(/assets/fonts/area/Area-Bold.woff);
+    src: url('../fonts/Area-Bold.woff2') format('woff2'),
+        url('../fonts/Area-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
 }
 
 
@@ -25,39 +29,47 @@
     background-image: radial-gradient(75% 220% at 50% 50%, #10AE88 0%, #07585E 0%, #002740 100%);
 }
 
+.main_section {
+    background-image: radial-gradient(100% 250% at 50% 50%, #10AE88 20%, #07585E 50%, #002740 100%);
+}
+
 .logo_container {
-    min-height: 45vh;
+    min-height: 55vh;
 }
 
 .logo_container h1 {
     font-weight: 600;
     font-size: 2.5rem;
-    width: 40%;
-    line-height: 1;
+    /* width: 40%; */
+    line-height: 1.1;
+    font-family: 'Area';
 }
 
 .instant_donate {
     font-size: 20px;
-
+    font-family: 'Area';
 }
 
 .aa_time {
-    font-size: 1.6rem;
+    font-size: 1.2rem;
     display: block;
     font-weight: 600;
     color: #fff;
+    font-family: 'Area';
 }
 
 .aa_islamic_time {
-    font-size: 15px;
+    font-size: 0.8rem;
     color: var(--aa-white);
+    font-family: 'Area';
 }
 
 .nav_container a {
     text-decoration: none;
     color: var(--aa-white);
-    font-size: 22px;
+    font-size: 1.6rem;
     transition: 0.7s;
+    font-family: 'Area';
 }
 
 .nav_container a:hover {
@@ -71,6 +83,88 @@
     font-size: 1.2rem;
 }
 
-.header_social_icons a:hover{
+.header_social_icons a:hover {
+    color: var(--aa-primary);
+}
+
+.hero_section .col-12 {
+    padding: 0;
+}
+
+.newsletter {
+    background-color: #ffffff75;
+}
+
+.newsletter p a {
+    font-size: 1.8rem;
+    color: var(--aa-secondary);
+    font-family: 'Area';
+    line-height: 1;
+    margin: 0;
+    text-decoration: none;
+}
+
+.arrow_circle {
+    width: 35px;
+    height: 35px;
+    border: 2px solid var(--aa-secondary);
+}
+
+.circle_white {
+    width: 35px;
+    height: 35px;
+    border: 2px solid var(--aa-white);
+}
+
+.page_link, .page_title {
+    color: var(--aa-white);
+    font-family: 'Area';
+    line-height: 1;
+    margin: 0;
+    text-decoration: none;
+}
+
+.page_title_container {
+    background-color: #ffffff69;
+
+}
+
+.page_link h3 {
+    font-size: 2rem;
+}
+
+.page_title {}
+
+.footer_nav a {
+    margin-bottom: 5px;
+}
+
+.footer_nav a {
+    text-decoration: none;
+    color: var(--aa-white);
+    font-size: 0.9rem;
+    transition: 0.7s;
+    font-family: 'Area';
+    text-transform: uppercase;
+}
+
+.footer_nav a:hover {
+    color: var(--aa-primary);
+}
+
+.aa_copyright p {
+    text-decoration: none;
+    color: var(--aa-white);
+    font-size: 0.9rem;
+    transition: 0.7s;
+    font-family: 'Area';
+}
+
+.aa_copyright p a {
+    color: var(--aa-white);
+    text-decoration: none;
+}
+
+.aa_copyright p a:hover{
     color: var(--aa-primary);
 }
