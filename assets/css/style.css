@@ -133,7 +133,40 @@
     font-size: 2rem;
 }
 
-.page_title {}
+
+/* ========== common style for page ========== */
+
+.page_title {
+    transform: rotate(90deg);
+    transform-origin: left bottom;
+    white-space: nowrap;
+    display: inline-block;
+    position: relative;
+    top: 0%;
+    left: 20%;
+    text-transform: uppercase
+}
+
+.line_with_page_title {
+    width: 10%;
+    height: 20%;
+    background-color: white;
+    position: relative;
+    left: 40%;
+    top: 0;
+    border-bottom-right-radius: 35%;
+    border-bottom-left-radius: 35%;
+}
+
+
+
+
+
+
+
+
+
+ /* ========= Footer section ========== */
 
 .footer_nav a {
     margin-bottom: 5px;
