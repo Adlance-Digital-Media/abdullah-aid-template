@@ -25,10 +25,53 @@
 
     <!-- Main Container -->
     <div class="container h-100 min-vh-100">
-
         <div class="row">
-            <main class="col-12 col-lg-10 main_section">
 
+            <!-- Mobile Menu -->
+            <nav class="navbar bg-white fixed-top d-block d-lg-none">
+                <div class="container-fluid">
+                    <a class="navbar-brand col-7 col-sm-6" href="#">
+                        <img class="w-100" src="https://www.abdullahaid.org.uk/assets/images/aa-logo-color.png" alt="">
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+                        aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                        <div class="offcanvas-header">
+                            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
+                                <a class="navbar-brand" href="#">
+                                    <img class="w-75" src="https://www.abdullahaid.org.uk/assets/images/aa-logo-color.png" alt="">
+                                </a>
+                            </h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body">
+                            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                                <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Projects</a>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                        aria-expanded="false">
+                                        Dropdown
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="#">Info</a></li>
+                                        <li><a class="dropdown-item" href="#">News</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+
+            <main class="col-12 col-lg-10 main_section mt-5 mt-lg-0">
+              
                 <section class="row py-5 logo_container justify-content-center align-items-center header_section">
                     <div class="col-12 d-flex flex-column justify-content-center align-items-center">
                         <a class="w-50 text-center" href=""><img class="w-75" src="assets/images/Abdullah Aid.svg"
@@ -36,7 +79,7 @@
 
                         <h1 class="text-uppercase my-4 text-white text-center col-12 col-md-7 col-xl-5">Change for one,
                             Hope for all</h1>
-                        <a class="col-8 col-sm-4 w text-center" href="#">
+                        <a class="col-10 col-sm-8 col-md-5 col-lg-4 w text-center" href="#">
                             <button type="button"
                                 class="btn btn-outline-light px-5 text-uppercase instant_donate w-100">Instant
                                 Donate</button>
@@ -199,7 +242,8 @@
                     </div>
 
                     <div class="col-12 aa_copyright text-center pt-5">
-                        <p>Charity Registration Number 1165916 <a href="#">Abdullah Aid</a> 2023 - All rights reserved</p>
+                        <p>Charity Registration Number 1165916 <a href="#">Abdullah Aid</a> 2023 - All rights reserved
+                        </p>
                     </div>
                 </div>
             </footer>
