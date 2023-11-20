@@ -133,6 +133,13 @@
     font-size: 2rem;
 }
 
+.homepage_title {
+    text-decoration: none;
+}
+
+.navbar-toggler:focus{
+    box-shadow: none;
+}
 
 /* ========== common style for page ========== */
 
@@ -166,7 +173,7 @@
 
 
 
- /* ========= Footer section ========== */
+/* ========= Footer section ========== */
 
 .footer_nav a {
     margin-bottom: 5px;
@@ -198,6 +205,6 @@
     text-decoration: none;
 }
 
-.aa_copyright p a:hover{
+.aa_copyright p a:hover {
     color: var(--aa-primary);
 }
