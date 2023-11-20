@@ -137,10 +137,19 @@
     text-decoration: none;
 }
 
-.navbar-toggler:focus{
+.navbar-toggler:focus {
     box-shadow: none;
 }
 
+.nav-link, .dropdown-item {
+    font-family: 'Area';
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+.navbar-nav .nav-link.active, .navbar-nav .nav-link.show{
+    color: var(--aa-secondary);
+}
 /* ========== common style for page ========== */
 
 .page_title {
