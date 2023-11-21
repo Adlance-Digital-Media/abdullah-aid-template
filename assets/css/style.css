@@ -147,9 +147,23 @@
     text-transform: uppercase;
 }
 
-.navbar-nav .nav-link.active, .navbar-nav .nav-link.show{
+.navbar-nav .nav-link.active, .navbar-nav .nav-link.show {
     color: var(--aa-secondary);
 }
+
+.top_divider {
+    width: 50%;
+    border-top: 2px dashed var(--aa-primary);
+}
+
+.mobile_menu_social_icons li {
+    margin-right: 15px;
+}
+
+.mobile_menu_social_icons li a {
+    font-size: 1.5rem;
+}
+
 /* ========== common style for page ========== */
 
 .page_title {
@@ -197,7 +211,8 @@
     width: 50%;
     height: 250%;
     background: linear-gradient(45deg, #ffffff 33.33%, transparent 33.33%, transparent 66.66%, #ffffff 66.66%);
-    background-size: 8px 8px; /* Adjust the size of the stripes */
+    background-size: 8px 8px;
+    /* Adjust the size of the stripes */
 }
 
 
