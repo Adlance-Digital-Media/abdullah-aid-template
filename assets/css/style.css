@@ -203,14 +203,14 @@
 
 .stripe-container {
     width: 200px;
-    height: 200px;
+    height: 40%;
     position: relative;
 }
 
 .stripe-pattern {
     width: 50%;
     height: 250%;
-    background: linear-gradient(45deg, #ffffff 33.33%, transparent 33.33%, transparent 66.66%, #ffffff 66.66%);
+    background: linear-gradient(45deg, #ffffff38  33.33%, transparent 33.33%, transparent 66.66%, #ffffff38  66.66%);
     background-size: 8px 8px;
     /* Adjust the size of the stripes */
 }
