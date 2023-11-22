@@ -33,32 +33,32 @@
                     <a class="navbar-brand col-7 col-sm-6" href="#">
                         <img class="w-100" src="https://www.abdullahaid.org.uk/assets/images/aa-logo-color.png" alt="">
                     </a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
-                        data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar"
-                        aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="offcanvas offcanvas-start bg-secondary" tabindex="-1" id="offcanvasNavbar"
-                        aria-labelledby="offcanvasNavbarLabel">
+                    <a class="" data-bs-toggle="offcanvas" data-bs-target="#aa_mobile_sidebar"
+                        aria-controls="aa_mobile_sidebar" aria-label="Toggle navigation">
+                        <span class="aa_mobile_nav_toggler"> <i class="fa-solid fa-bars"></i> </span>
+                    </a>
+                    <div class="offcanvas offcanvas-start bg-secondary" tabindex="-1" id="aa_mobile_sidebar"
+                        aria-labelledby="aa_mobile_sidebarLabel">
                         <div class="offcanvas-header">
-                            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
+                            <h5 class="offcanvas-title" id="aa_mobile_sidebarLabel">
                                 <a class="navbar-brand" href="#">
-                                    <img class="w-75"
-                                        src="assets/images/AA-logo-white.svg" alt="">
+                                    <img class="w-75" src="assets/images/AA-logo-white.svg" alt="">
                                 </a>
                             </h5>
-                            <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
-                                aria-label="Close"></button>
+                            <a class="close_btn text-white" data-bs-dismiss="offcanvas" aria-label="Close"> <i
+                                    class="fa fa-close"></i> </a>
                         </div>
                         <div class="offcanvas-body row m-0 p-0">
-                            <div class="d-flex justify-content-center col-2 h-100 position-absolute left-0 mobile_menu_bar">
-                                <span>
+                            <div
+                                class="d-flex justify-content-center col-2 h-100 position-absolute left-0 mobile_menu_bar">
+                                <span class="islamic_sidebar_date text-capitalize pt-3">12 Rab. 1446 Ah.</span>
+                                <span class="text-capitalize pt-3">
                                     22 sep 2023
                                 </span>
-                               
+
                             </div>
                             <div class="col-9 offset-2">
-                                <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                                <ul class="navbar-nav justify-content-end flex-grow-1 pe-3 pt-2">
                                     <li class="nav-item">
                                         <a class="nav-link active" aria-current="page" href="#">Home</a>
                                     </li>
@@ -75,20 +75,21 @@
                                         <a class="nav-link" href="#">Sign Up</a>
                                     </li>
                                     <li class="nav-item dropdown">
-                                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        <a class="nav-link dropdown-toggle" href="#" role="button"
+                                            data-bs-toggle="dropdown" aria-expanded="false">
                                             Projects
                                         </a>
-                                        <ul class="dropdown-menu">
+                                        <ul class="dropdown-menu bg-primary">
                                             <li><a class="dropdown-item" href="#">Project 1</a></li>
                                             <li><a class="dropdown-item" href="#">Project 2</a></li>
                                         </ul>
                                     </li>
                                 </ul>
-                                
+
                                 <div class="top_divider mt-3"></div>
-                                
+
                                 <ul class="mobile_menu_social_icons d-flex list-unstyled pt-1 mt-1">
-                                
+
                                     <li>
                                         <a href="#"> <i class="fa-brands fa-instagram"></i> </a>
                                     </li>
@@ -103,11 +104,11 @@
                                     </li>
                                 </ul>
                             </div>
-                           
+
                         </div>
 
                         <div class="offcanvas-footer py-2">
-                            
+
                         </div>
                     </div>
                 </div>

@@ -149,7 +149,7 @@
 }
 
 .navbar-nav .nav-link.active, .navbar-nav .nav-link.show {
-    color: var(--aa-secondary);
+    color: var(--aa-primary);
 }
 
 .top_divider {
@@ -161,9 +161,15 @@
     margin-right: 15px;
 }
 
+.nav-link:hover, .nav-link:focus {
+    color: var(--aa-primary);
+}
+
 .mobile_menu_social_icons li a {
     font-size: 1.5rem;
     color: var(--aa-white);
+    margin: 0;
+    padding: 0;
 }
 
 .mobile_menu_bar {
@@ -172,11 +178,31 @@
 
 .mobile_menu_bar span {
     writing-mode: vertical-rl;
-    /* transform: rotate(180deg); */
-    min-width: 20px;
+    /* min-width: 20px; */
     color: #fff;
     font-size: 1.5rem;
-    font-family: 'Area';    
+    font-family: 'Area';
+    line-height: 1.4rem;
+}
+
+.mobile_menu_bar .islamic_sidebar_date {
+    writing-mode: vertical-rl;
+    /* min-width: 20px; */
+    color: #fff;
+    font-size: 0.9rem;
+    font-family: 'Area';
+}
+
+.close_btn {
+    font-size: 1.6rem;
+}
+
+.aa_mobile_nav_toggler {
+    font-size: 1.7rem;
+}
+
+.nav-link {
+    padding: 2PX;
 }
 
 /* ========== common style for page ========== */
