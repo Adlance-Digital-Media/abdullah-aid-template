@@ -19,7 +19,37 @@
     <!-- JQuery Ui CSS CDN -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.13.2/themes/base/jquery-ui.min.css">
   <!-- <link rel="stylesheet" href="/resources/demos/style.css"> -->
+  <style>
+    /* Custom styles for the accordion */
+    #accordion {
+        margin: 20px;
+    }
 
+    /* Custom styles for accordion headers */
+    #accordion h3 {
+        background-color: white; /* Customize header background color */
+        color: #002740; /* Customize header text color */
+        padding: 10px;
+        cursor: pointer;
+        border-bottom: 1px solid #ddd; /* Customize border between headers */
+    }
+
+    /* Custom styles for accordion content */
+    #accordion div {
+        padding: 5px;
+    }
+
+    /* Custom styles for the toggle button */
+    #toggle {
+        /* display: flex;
+        justify-content: center;
+        align-items: center; */
+        background-color: #28a745; /* Customize button background color */
+        color: #fff; /* Customize button text color */
+        cursor: pointer;
+        padding: 10px;
+    }
+</style>
   
 
 </head>
@@ -87,25 +117,70 @@
                 <!-- ================= page content ====================== -->
 
                 <div class="row justify-content-center align-items-center">
-                   
-                    <div class="col-md-11 bg-white">
-                        <div id="accordion">
-                            <h3>Section 1</h3>
-                            <div>
-                                <p>Mauris mauris ante, blandit et, ultrices a, suscipit eget, quam. Integer ut neque. Vivamus nisi metus, molestie vel, gravida in, condimentum sit amet, nunc. Nam a nibh. Donec suscipit eros. Nam mi. Proin viverra leo ut odio. Curabitur malesuada. Vestibulum a velit eu ante scelerisque vulputate.</p>
+                    <div class="col-md-11" >
+                        <div id="accordion" >
+                            <h3 class="" style="width: 100%;">Section 1</h3>
+                            <div style="width: 100%;">
+                                <div class="row justify-content-center align-items-center" >
+                                    <div class="col-md-11 border-0 border-bottom-2">
+                                        <h3 class="text-secondary" >Title  1</h3>
+                                    </div>
+                             
+                                    <div class="col-md-11">
+                                        <h3 class="text-secondary" >Title  1</h3>
+                                    </div>
+                                    <div class="col-md-11">
+                                        <h3 class="text-secondary" >Title  1</h3>
+                                    </div>
+                                </div>
+                                
+                                
+
+
+                               
                             </div>
                         </div>
                     </div>
                     <div class="col-md-1 bg-secondary">
-                        <span id="toggle"  class="justify-content-center align-items-center">
-                            <img  src="assets/icons/plus.svg" alt="" style=" width: 50%;">
+                        <span id="toggle">
+                            <img src="assets/icons/plus.svg" alt="" style="width: 50%;">
                         </span>
                     </div>
-
                 </div>
                 
                 
-             
+                <script>
+                    $(document).ready(function () {
+                        var icons = {
+                            header: "custom-icon-plus", // Custom icon for collapsed headers
+                            activeHeader: "custom-icon-minus" // Custom icon for active (expanded) headers
+                        };
+            
+                        $("#accordion").accordion({
+                            // Customize the classes option for styling
+                            classes: {
+                                "ui-accordion": "custom-accordion",
+                                "ui-accordion-header": "custom-header",
+                                "ui-accordion-content": "custom-content"
+                            },
+                            // Customize the icons option for headers
+                            icons: icons,
+                            // Add other options as needed
+                            collapsible: true,
+                            active: false,
+                            heightStyle: "content"
+                        });
+            
+                        // Add custom icons to the accordion headers
+                        $("<style>")
+                            .prop("type", "text/css")
+                            .html(`
+                            .custom-icon-plus::before { content: "\\25B6"; } /* Unicode character for triangle-right */
+                            .custom-icon-minus::before { content: "\\25BC"; } /* Unicode character for triangle-down */
+                        `)
+                            .appendTo("head");
+                    });
+                </script>
 
 
                 <!-- Footer Area -->
