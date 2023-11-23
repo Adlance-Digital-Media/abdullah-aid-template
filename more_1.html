@@ -74,7 +74,7 @@
                     </div>
 
                     <!-- Page title  -->
-                    <div class="col-md-1 bg-primary text-center">
+                    <div class="col-md-1 bg-primary text-center d-none d-sm-none d-md-block">
                             <div class="line_with_page_title"></div>
                             <h1 class="page_title">Projects</h1>
                     </div>
@@ -109,7 +109,7 @@
 
 
                 <!-- Footer Area -->
-                <div class="row justify-content-center align-items-center g-2">
+                <div class="row justify-content-center align-items-center bg-secondary">
                     <footer class="col-12 col-lg-10 pt-5 d-flex flex-column align-items-center justify-content-center">
                         <img src="assets/images/fundraising-regulator.svg" alt="">
 
@@ -184,6 +184,102 @@
                     </header>
                 </div>
             </div>
+
+        </div>
+         <!-- Mobile Menu -->
+         <div class="row">
+            <nav class="navbar bg-white fixed-top d-block d-lg-none">
+                <div class="container-fluid">
+                    <a class="navbar-brand col-7 col-sm-6" href="#">
+                        <img loading="lazy" class="w-100"
+                            src="https://www.abdullahaid.org.uk/assets/images/aa-logo-color.png" alt="">
+                    </a>
+                    <a href="/" class="" data-bs-toggle="offcanvas" data-bs-target="#aa_mobile_sidebar"
+                        aria-controls="aa_mobile_sidebar" aria-label="Toggle navigation">
+                        <span class="aa_mobile_nav_toggler"> <i class="fa-solid fa-bars"></i> </span>
+                    </a>
+                    <div class="offcanvas offcanvas-start bg-secondary" tabindex="-1" id="aa_mobile_sidebar"
+                        aria-labelledby="aa_mobile_sidebarLabel">
+                        <div class="offcanvas-header">
+                            <h5 class="offcanvas-title" id="aa_mobile_sidebarLabel">
+                                <a class="navbar-brand" href="#">
+                                    <img loading="lazy" class="w-75" src="assets/images/AA-logo-white.svg" alt="">
+                                </a>
+                            </h5>
+                            <a class="close_btn text-white" data-bs-dismiss="offcanvas" aria-label="Close"> <i
+                                    class="fa fa-close"></i> </a>
+                        </div>
+                        <div class="offcanvas-body row m-0 p-0">
+                            <div
+                                class="d-flex justify-content-center col-2 px-4 h-100 position-absolute left-0 mobile_menu_bar">
+                                <span class="islamic_sidebar_date text-capitalize pt-3">12 Rab. 1446 Ah.</span>
+                                <span class="text-capitalize pt-3">
+                                    22 sep 2023
+                                </span>
+
+                            </div>
+                            <div class="col-9 offset-2">
+                                <ul class="navbar-nav justify-content-end flex-grow-1 pe-3 pt-2">
+                                    <li class="nav-item">
+                                        <a class="nav-link active" aria-current="page" href="/">Home</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Info</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">News</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Volunteer</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Sign Up</a>
+                                    </li>
+                                    <li class="nav-item dropdown">
+                                        <a class="nav-link dropdown-toggle" href="#" role="button"
+                                            data-bs-toggle="dropdown" aria-expanded="false">
+                                            Projects
+                                        </a>
+                                        <ul class="dropdown-menu bg-primary">
+                                            <li><a class="dropdown-item" href="#">Project 1</a></li>
+                                            <li><a class="dropdown-item" href="#">Project 2</a></li>
+                                        </ul>
+                                    </li>
+                                    <img loading="lazy" class="my-2 w-75" src="assets/images/divider-line.png" alt="">
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">More</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="photos.html">Photos</a>
+                                    </li>
+                                </ul>
+
+                                <!-- <div class="top_divider mt-3"></div> -->
+
+                                <ul class="mobile_menu_social_icons d-flex list-unstyled pt-1 mt-1">
+
+                                    <li>
+                                        <a href="#"> <i class="fa-brands fa-instagram"></i> </a>
+                                    </li>
+                                    <li>
+                                        <a href="#"> <i class="fa-brands fa-x-twitter"></i> </a>
+                                    </li>
+                                    <li>
+                                        <a href="#"> <i class="fa-brands fa-tiktok"></i> </a>
+                                    </li>
+                                    <li>
+                                        <a href="#"> <i class="fa-brands fa-facebook-f"></i> </a>
+                                    </li>
+                                    <li>
+                                        <a href="#"> <i class="fa-brands fa-youtube"></i> </a>
+                                    </li>
+                                </ul>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </nav>
         </div>
     </div>
 
