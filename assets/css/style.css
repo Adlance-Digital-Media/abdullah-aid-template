@@ -26,6 +26,22 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'Area-Extended-Bold';
+    src: url('../fonts/area-extraboldextended.woff2') format('woff2'),
+        url('../fonts/area-extraboldextended.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Area-Extended-Black';
+    src: url('../fonts/area-extrablackextended.woff2') format('woff2'),
+        url('../fonts/area-extrablackextended.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
 
 * {
     margin: 0;
@@ -55,12 +71,17 @@
     font-size: 2.5rem;
     /* width: 40%; */
     line-height: 1.1;
-    font-family: 'Area-Extended';
+    font-family: 'Area-Extended-Bold';
 }
 
 .instant_donate {
     font-size: 20px;
-    font-family: 'Area-Extended';
+    font-family: 'Area-Extended-Black';
+}
+
+.instant_donate:hover {
+    color: var(--aa-secondary);
+    font-weight: bold;
 }
 
 .aa_time {
@@ -82,7 +103,7 @@
     color: var(--aa-white);
     font-size: 1.6rem;
     transition: 0.7s;
-    font-family: 'Area-Extended';
+    font-family: 'Area-Extended-Bold';
 }
 
 .nav_container a:hover {
@@ -229,7 +250,7 @@
     display: inline-block;
     position: relative;
     top: 0%;
-    left: 10%;
+    left: 15px;
     text-transform: uppercase
 }
 
@@ -240,8 +261,8 @@
     position: relative;
     left: 40%;
     top: 0;
-    border-bottom-right-radius: 35%;
-    border-bottom-left-radius: 35%;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
 }
 
 /* project page show project with image  */
@@ -252,7 +273,8 @@
 
 /* Reduce grayscale and adjust brightness on hover */
 .project-section-container:hover {
-    filter: grayscale(90%);
+    filter: brightness(100%) grayscale(0);
+    background: linear-gradient(0);
 }
 
 
@@ -347,10 +369,27 @@
     border-radius: 3px;
 }
 
-.lg-outer .lg-thumb-item.active, .lg-outer .lg-thumb-item:hover{
+.lg-outer .lg-thumb-item.active, .lg-outer .lg-thumb-item:hover {
     border-color: var(--aa-primary) !important;
 }
+
 /* ========= Masonary Grid Gallery section END ========== */
+
+.project_row {
+    height: 130px;
+}
+
+.project-section-container a {
+    filter: brightness(100%) grayscale(0) !important;
+}
+
+.project-section-container a h2 {
+    font-size: 1.6rem;
+    transition: 0.7s;
+    font-family: 'Area-Extended-Black';
+    font-weight: 800;
+    filter: brightness(100%) grayscale(0);
+}
 
 /* ========= Footer section ========== */
 
