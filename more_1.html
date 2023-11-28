@@ -18,38 +18,61 @@
 
     <!-- JQuery Ui CSS CDN -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.13.2/themes/base/jquery-ui.min.css">
-  <!-- <link rel="stylesheet" href="/resources/demos/style.css"> -->
-  <style>
-    /* Custom styles for the accordion */
-    #accordion {
-        margin: 20px;
-    }
+  
 
-    /* Custom styles for accordion headers */
-    #accordion h3 {
-        background-color: white; /* Customize header background color */
-        color: #002740; /* Customize header text color */
-        padding: 10px;
-        cursor: pointer;
-        border-bottom: 1px solid #ddd; /* Customize border between headers */
-    }
+    <style>
+        /* Custom styles for the accordion */
+        #accordion {
+            margin: 20px;
+        }
 
-    /* Custom styles for accordion content */
-    #accordion div {
-        padding: 5px;
-    }
+        /* Custom styles for accordion headers */
+        #accordion .accordion-button {
+            background-color: white; /* Customize header background color */
+            color: #002740; /* Customize header text color */
+            padding: 10px;
+            cursor: pointer;
+            border: none; /* Remove border from the title */
+            border-bottom: 0px solid white;
+        }
 
-    /* Custom styles for the toggle button */
-    #toggle {
-        /* display: flex;
-        justify-content: center;
-        align-items: center; */
-        background-color: #28a745; /* Customize button background color */
-        color: #fff; /* Customize button text color */
-        cursor: pointer;
-        padding: 10px;
-    }
-</style>
+
+
+        /* Custom styles for accordion content */
+        #accordion .accordion-collapse {
+            padding: 5px;
+            border: none; /* Remove border from the content */
+        }
+
+        /* Custom styles for the toggle button */
+        #toggle {
+            color: #fff; /* Customize button text color */
+            cursor: pointer;
+            padding: 10px;
+        }
+
+        /* Remove the border from the whole accordion */
+        #accordion .accordion-item {
+            border: none;
+        }
+
+        /* Remove the outline and shadow on focus */
+        #accordion .accordion-button:focus {
+            box-shadow: none;
+            outline: none;
+        }
+
+        /* hide down icon when accordion is not active */
+        .accordion-button::after {
+            display: none;
+        }
+
+        /* hide down icon when accordion is active */
+        .accordion-button:not(.collapsed)::after {
+            display: none;
+       }
+    </style>
+
   
 
 </head>
@@ -115,29 +138,13 @@
 
 
                 <!-- ================= page content ====================== -->
-
+<!-- 
                 <div class="row justify-content-center align-items-center">
-                    <div class="col-md-11" >
-                        <div id="accordion" >
-                            <h3 class="" style="width: 100%;">Section 1</h3>
-                            <div style="width: 100%;">
-                                <div class="row justify-content-center align-items-center" >
-                                    <div class="col-md-11 border-0 border-bottom-2">
-                                        <h3 class="text-secondary" >Title  1</h3>
-                                    </div>
-                             
-                                    <div class="col-md-11">
-                                        <h3 class="text-secondary" >Title  1</h3>
-                                    </div>
-                                    <div class="col-md-11">
-                                        <h3 class="text-secondary" >Title  1</h3>
-                                    </div>
-                                </div>
-                                
-                                
-
-
-                               
+                    <div class="col-md-11 bg-white">
+                        <div id="accordion">
+                            <h3>Zakaat</h3>
+                            <div>
+                                It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
                             </div>
                         </div>
                     </div>
@@ -146,42 +153,64 @@
                             <img src="assets/icons/plus.svg" alt="" style="width: 50%;">
                         </span>
                     </div>
-                </div>
-                
-                
-                <script>
-                    $(document).ready(function () {
-                        var icons = {
-                            header: "custom-icon-plus", // Custom icon for collapsed headers
-                            activeHeader: "custom-icon-minus" // Custom icon for active (expanded) headers
-                        };
-            
-                        $("#accordion").accordion({
-                            // Customize the classes option for styling
-                            classes: {
-                                "ui-accordion": "custom-accordion",
-                                "ui-accordion-header": "custom-header",
-                                "ui-accordion-content": "custom-content"
-                            },
-                            // Customize the icons option for headers
-                            icons: icons,
-                            // Add other options as needed
-                            collapsible: true,
-                            active: false,
-                            heightStyle: "content"
-                        });
-            
-                        // Add custom icons to the accordion headers
-                        $("<style>")
-                            .prop("type", "text/css")
-                            .html(`
-                            .custom-icon-plus::before { content: "\\25B6"; } /* Unicode character for triangle-right */
-                            .custom-icon-minus::before { content: "\\25BC"; } /* Unicode character for triangle-down */
-                        `)
-                            .appendTo("head");
-                    });
-                </script>
+                </div> -->
 
+                <div class="row justify-content-center align-items-center border-bottom border-3">
+    <div class="col-md-11 bg-white">
+        <div id="accordion" class="accordion">
+            
+            <!-- Accordion Section 1 -->
+            <div class="accordion-item">
+                <h3 class="accordion-header" id="headingOne">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        Zakaat
+                    </button>
+                </h3>
+                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordion">
+                    <div class="accordion-body">
+                        Content for Zakaat accordion section.
+                    </div>
+                </div>
+            </div>
+
+            <!-- Accordion Section 2 -->
+            <div class="accordion-item">
+                <h3 class="accordion-header" id="headingTwo">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+                        Section 2
+                    </button>
+                </h3>
+                <div id="collapseTwo" class="accordion-collapse collapse show" aria-labelledby="headingTwo" data-bs-parent="#accordion">
+                    <div class="accordion-body">
+                        Content for Section 2 accordion section.
+                    </div>
+                </div>
+            </div>
+
+            <!-- Repeat the above structure for more accordion sections -->
+
+        </div>
+    </div>
+
+    <!-- Additional Accordions (3 to 10) -->
+    <!-- Duplicate the structure and modify the content accordingly -->
+
+    <div class="col-md-1 bg-secondary">
+        <span id="toggle" onclick="toggleAccordion()">
+            <img src="assets/icons/plus.svg" alt="" style="width: 50%;">
+        </span>
+    </div>
+</div>
+
+<script>
+    function toggleAccordion() {
+        // Trigger the click event on the accordion button
+        document.querySelector('[data-bs-target="#collapseOne"]').click();
+    }
+</script>
+
+                
+                
 
                 <!-- Footer Area -->
                 <div class="row justify-content-center align-items-center bg-secondary">
@@ -239,6 +268,7 @@
                             <a href="">Info</a>
                             <a href="">News</a>
                             <a href="">Volunteer</a>
+                            <a href="donations-explained.html">Donations Explained </a>
                             <a href="">Sign up</a>
                         </nav>
                         <div class="pt-4 d-flex w-full p-1 header_social_icons">
@@ -308,6 +338,9 @@
                                         <a class="nav-link" href="#">Volunteer</a>
                                     </li>
                                     <li class="nav-item">
+                                        <a class="nav-link" href="donations-explained.html">Volunteer</a>
+                                    </li>
+                                    <li class="nav-item">
                                         <a class="nav-link" href="#">Sign Up</a>
                                     </li>
                                     <li class="nav-item dropdown">
@@ -371,26 +404,26 @@
 <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
 
 <script>
-    $(document).ready(function () {
-        var icons = {
-            header: "ui-icon-circle-arrow-e",
-            activeHeader: "ui-icon-circle-arrow-s"
-        };
+    // $(document).ready(function () {
+    //     var icons = {
+    //         // header: "ui-icon-circle-arrow-e",
+    //         // activeHeader: "ui-icon-circle-arrow-s"
+    //     };
 
-        $("#accordion").accordion({
+    //     $("#accordion").accordion({
         
-            collapsible: true, // Allow all sections to be closed
-            active: false, // Initially collapse all sections
-            heightStyle: "content" // Set the height style to content
-        });
+    //         collapsible: true, // Allow all sections to be closed
+    //         active: false, // Initially collapse all sections
+    //         heightStyle: "content" // Set the height style to content
+    //     });
 
-        $("#toggle").button().on("click", function () {
-            var accordion = $("#accordion");
-            var isCollapsed = accordion.accordion("option", "active") === false;
+    //     $("#toggle").button().on("click", function () {
+    //         var accordion = $("#accordion");
+    //         var isCollapsed = accordion.accordion("option", "active") === false;
 
-            accordion.accordion("option", "active", isCollapsed ? 0 : false);
-        });
-    });
+    //         accordion.accordion("option", "active", isCollapsed ? 0 : false);
+    //     });
+    // });
 </script>
 
 
