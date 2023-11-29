@@ -178,7 +178,7 @@
 
 .nav-link, .dropdown-item {
     font-family: 'Area-Extended';
-    font-weight: ;
+    /* font-weight: ; */
     font-size: 18px;
     text-transform: uppercase;
     color: var(--aa-white);
@@ -239,6 +239,14 @@
 
 .nav-link {
     padding: 2PX;
+}
+
+
+.primary-heading {
+    font-family: Area;
+    font-size: 25px !important;
+    font-weight: 800;
+    line-height: 28px;
 }
 
 /* ========== common style for page ========== */
