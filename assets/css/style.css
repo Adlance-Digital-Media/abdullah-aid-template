@@ -317,6 +317,38 @@
     text-align: center;
 }
 
+.page_content {
+    position: relative;
+    padding-bottom: 40px;
+}
+
+.page_content:before,
+.page_content:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 40%;
+    /* Adjust the width of the empty space */
+    height: 2px;
+    /* Adjust the thickness of the border */
+    background-color: #fff;
+    /* Adjust the color of the border */
+}
+
+.page_content:before {
+    left: 0;
+}
+
+.page_content:after {
+    right: 0;
+}
+
+.page_bottom_logo {
+    bottom: -85px;
+    width: 20%;
+    cursor: pointer;
+}
+
 /* ========= Masonary Grid Gallery section ========== */
 
 #masonry_grid {
@@ -402,7 +434,7 @@
     color: var(--aa-white);
     font-size: 0.9rem;
     transition: 0.7s;
-    font-family: 'Area-Extended';
+    font-family: 'Area-Extended-Bold';
     text-transform: uppercase;
 }
 
@@ -426,4 +458,21 @@
 
 .aa_copyright p a:hover {
     color: var(--aa-primary);
+}
+
+
+/* BREAKPOINTS */
+
+@media screen and (max-width:662px) {
+
+    .page_bottom_logo {
+        bottom: -25px;
+        padding-top: 20px;
+        width: 30%;
+    }
+
+    .page_content:before,
+    .page_content:after{
+        height: 0;
+    }
 }
