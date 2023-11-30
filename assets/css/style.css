@@ -480,7 +480,14 @@
     }
 
     .page_content:before,
-    .page_content:after{
+    .page_content:after {
         height: 0;
+    }
+}
+
+@media screen and (min-width:992px) and (max-width:1440px) {
+
+    .page_bottom_logo{
+        bottom: -58px;
     }
 }
