@@ -132,7 +132,7 @@
 .newsletter p a {
     font-size: 1.8rem;
     color: var(--aa-secondary);
-    font-family: 'Area-Extended';
+    font-family: 'Area-Extended-Black';
     line-height: 1;
     margin: 0;
     text-decoration: none;
@@ -152,24 +152,60 @@
 
 .page_link, .page_title {
     color: var(--aa-white);
-    font-family: 'Area-Extended';
+    font-family: 'Area-Extended-Black';
     line-height: 1;
     margin: 0;
     text-decoration: none;
 }
 
+.page_title_text::before {
+    content: "";
+    display: block;
+    position: absolute;
+    height: 24px;
+    top: calc(50% - 12px);
+    width: 1px;
+    left: 70px;
+    background-color: #1A1A1A;
+}
+
 .page_title_container {
     background-color: #ffffff69;
-
+    left: -20px;
 }
 
 .page_link h3 {
     font-size: 2rem;
+    font-family: 'Area-Extended-Bold';
+}
+
+.page_link:hover {
+    color: var(--aa-secondary);
 }
 
 .homepage_title {
     text-decoration: none;
-    font-family: 'Area-Extended';
+    font-family: 'Area-Extended-Black';
+}
+
+.homepage_title::before {
+    opacity: 0.5;
+    display: block;
+    content: "";
+    width: 100vw;
+    position: absolute;
+    right: 100%;
+    height: 100%;
+    top: 0;
+    background-color: #F2F2F2;
+    background-image: url('https://wirelessfestival.co.uk/assets/images/chevron-dark.png');
+    background-position: top right;
+    background-repeat: repeat;
+    background-size: 12px 12px;
+}
+
+.title_target_icon {
+    left: 20px;
 }
 
 .navbar-toggler:focus {
@@ -487,7 +523,7 @@
 
 @media screen and (min-width:992px) and (max-width:1440px) {
 
-    .page_bottom_logo{
+    .page_bottom_logo {
         bottom: -58px;
     }
 }
