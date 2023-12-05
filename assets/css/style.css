@@ -49,6 +49,10 @@
     box-sizing: border-box;
 }
 
+p, h1, h2, h3, h4, h5, h6, input {
+    font-family: 'Area-Extended', 'Arial    ';
+}
+
 .header_section {
     background-image: radial-gradient(75% 220% at 50% 50%, #10AE88 0%, #07585E 0%, #002740 100%);
 }
@@ -187,7 +191,7 @@
 }
 
 .page_link:hover {
-    color: var(--aa-secondary);
+    /* color: var(--aa-secondary); */
 }
 
 .homepage_title {
@@ -301,8 +305,16 @@
     display: inline-block;
     position: relative;
     top: 0%;
-    left: 15px;
+    left: 25%;
     text-transform: uppercase
+        /* transform: translateX(-50%) rotate(90deg);
+    transform-origin: left bottom;
+    white-space: nowrap;
+    display: inline-block;
+    position: relative;
+    top: 50%;
+    /* Adjust vertically if needed */
+
 }
 
 .line_with_page_title {
@@ -328,7 +340,13 @@
     background: linear-gradient(0);
 }
 
-
+.project_roww:hover::before {
+    background-image: url('../images/chevron-dark.png');
+    background-position: top left;
+    background-repeat: repeat;
+    background-size: 12px 12px;
+    opacity: 0.5;
+}
 
 .stripe-container {
     width: 200px;
@@ -532,5 +550,11 @@
 
     .page_bottom_logo {
         bottom: -58px;
+    }
+}
+
+@media screen and (min-width:1440px) {
+    .page_title {
+        left: 30%;
     }
 }
