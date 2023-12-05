@@ -127,6 +127,13 @@
 
 .newsletter {
     background-color: #ffffff75;
+    transition: background-color 0.8s;
+}
+
+.newsletter:hover {
+    background-color: #F2F2F2;
+    transition: background-color .8s;
+    cursor: pointer;
 }
 
 .newsletter p a {
