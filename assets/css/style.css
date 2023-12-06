@@ -340,12 +340,58 @@ p, h1, h2, h3, h4, h5, h6, input {
     background: linear-gradient(0);
 }
 
-.project_roww:hover::before {
+.home_project_row::before {
+    content: "";
+    display: block;
+    height: 100%;
+    width: 100%;
     background-image: url('../images/chevron-dark.png');
     background-position: top left;
     background-repeat: repeat;
     background-size: 12px 12px;
-    opacity: 0.5;
+    opacity: 0.2;
+    position: absolute;
+    z-index: 0;
+    width: 0%;
+    transition: width 0.8s;
+}
+
+.home_project_row:hover::before {
+    width: 100%;
+    transition: 1s;
+    cursor: pointer;
+}
+
+.home_project_row {
+    z-index: 1;
+    position: relative;
+}
+
+.home_project_img {
+    transition: 1s;
+}
+
+.home_project_row:hover .home_project_img {
+    transform: scale(1.07);
+    transform: 1s;
+}
+
+/* Initial style for the arrow image */
+.home_project_row .circle_white img {
+    transition: all 0.3s ease;
+    /* Add a transition for a smooth effect */
+}
+
+/* Style changes on hover */
+.home_project_row:hover .circle_white {
+    background-color: #fff;
+    transition: 0.5s;
+}
+
+.home_project_row:hover .circle_white img {
+    content: url('../images/arrow.svg');
+    opacity: 1;
+    width: 13px;
 }
 
 .stripe-container {
