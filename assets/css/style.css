@@ -604,6 +604,10 @@ p, h1, h2, h3, h4, h5, h6, input {
     .page_content:after {
         height: 0;
     }
+
+    .logo_container h1{
+        font-size: 2rem;
+    }
 }
 
 @media screen and (min-width:992px) and (max-width:1440px) {
