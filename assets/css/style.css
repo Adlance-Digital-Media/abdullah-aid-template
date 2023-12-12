@@ -331,6 +331,29 @@ p, h1, h2, h3, h4, h5, h6, input {
 
 }
 
+.aa_page_title {
+    text-transform: uppercase;
+    color: var(--aa-white);
+    writing-mode: vertical-rl;
+    position: relative;
+    font-size: 2rem;
+    font-family: 'Area-Extended-Black', 'Arial';
+    text-wrap: nowrap;
+    line-height: 1px;
+}
+
+
+.aa_page_title::before {
+    display: block;
+    content: "";
+    width: 8px;
+    height: 200px;
+    margin-bottom: 20px;
+    background-color: var(--aa-white);
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
 .line_with_page_title {
     width: 12%;
     height: 20%;
@@ -478,6 +501,43 @@ p, h1, h2, h3, h4, h5, h6, input {
     cursor: pointer;
 }
 
+/* ========= Project Detail Swiper Slider CSS ========== */
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.swiper-button-prev::after {
+    display: none;
+}
+
+.swiper-button-next::after {
+    display: none;
+}
+
+.custom-prev-button img {
+    transform: rotate(181deg);
+}
+
+/* ========= Project Detail Swiper Slider CSS - END ========== */
+
+
 /* ========= Masonary Grid Gallery section ========== */
 
 #masonry_grid {
@@ -605,7 +665,7 @@ p, h1, h2, h3, h4, h5, h6, input {
         height: 0;
     }
 
-    .logo_container h1{
+    .logo_container h1 {
         font-size: 2rem;
     }
 }

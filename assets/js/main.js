@@ -1,3 +1,20 @@
+// swiper slider start
+let projectDetailSlider = new Swiper(".projectDetailSlider", {
+    cssMode: true,
+    navigation: {
+        nextEl: ".custom-next-button",
+        prevEl: ".custom-prev-button",
+    },
+    speed:1200,
+    autoplay: {
+        delay: 3000,
+        disableOnInteraction: false,
+    },
+
+    mousewheel: true,
+    keyboard: true,
+});
+
 // Image Lazy Loading
 var imgDefer = document.getElementsByTagName("img");
 for (var i = 0; i < imgDefer.length; i++) {
