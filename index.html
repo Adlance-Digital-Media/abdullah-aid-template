@@ -12,6 +12,8 @@
     <!-- Font Awesome CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
         referrerpolicy="no-referrer" />
+    <!-- swiper css -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
     <link rel="preload" href="assets//fonts/Area-Bold.woff2" as="font" type="font/woff2">
     <link rel="preload" href="assets//fonts/area-boldextended.woff2" as="font" type="font/woff2">
@@ -37,10 +39,11 @@
                 <!-- hero logo section  -->
                 <div class="row py-5 logo_container justify-content-center align-items-center header_section">
                     <div class="col-12 d-flex flex-column justify-content-center align-items-center">
-                        <a class="w-50 text-center" href="#"><img width="75%" height="100%" class="w-75" src="assets/images/Abdullah Aid.svg"
-                                alt="AA Logo"></a>
+                        <a class="w-50 text-center" href="#"><img width="75%" height="100%" class="w-75"
+                                src="assets/images/Abdullah Aid.svg" alt="AA Logo"></a>
 
-                        <h1 class="text-uppercase my-3 my-lg-5 text-white text-center col-12 col-md-10 col-xl-7 col-xxl-6">
+                        <h1
+                            class="text-uppercase my-3 my-lg-5 text-white text-center col-12 col-md-10 col-xl-7 col-xxl-6">
                             Change for one,
                             Hope for all</h1>
                         <a class="col-10 col-sm-8 col-md-8 col-lg-6 col-xxl-4 w text-center" href="#">
@@ -54,7 +57,32 @@
                 <!-- hero image  -->
                 <div class="row  pb-5 hero_section">
                     <div class="col-md-12 p-0">
-                        <img width="100%" height="100%" class="w-100" src="assets/images/hero-img.jpg" alt="">
+                        <!-- <img width="100%" height="100%" class="w-100" src="assets/images/hero-img.jpg" alt=""> -->
+                        <!-- < ========swiper slider start ===========> -->
+                        <div class="swiper projectDetailSlider">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <img width="100%" height="100%" class="w-100" src="assets/images/hero-img.jpg"
+                                        alt="" />
+                                </div>
+                                <div class="swiper-slide">
+                                    <img width="100%" height="100%" class="w-100" src="assets/images/hero-img.jpg"
+                                        alt="" />
+                                </div>
+                                <div class="swiper-slide">
+                                    <img width="100%" height="100%" class="w-100" src="assets/images/hero-img.jpg"
+                                        alt="" />
+                                </div>
+                            </div>
+                            <div class="swiper-button-next custom-next-button">
+                                <img src="./assets/images/whit-arrow.png" alt="" srcset="" />
+                            </div>
+                            <div class="swiper-button-prev custom-prev-button">
+                                <img class="ratio-16x9" src="./assets/images/whit-arrow.png" alt="" srcset="" />
+                            </div>
+                        </div>
+
+                        <!-- < ========swiper slider end===========> -->
                     </div>
                     <!-- <div class="border border-bottom-4 border-secondary w-full h-100 mt-4"></div> -->
                 </div>
@@ -103,12 +131,15 @@
                             <article class="col-12 mb-4 mt-5">
                                 <div class="row align-items-center home_project_row">
 
-                                    <div class="col-12 col-md-6 col-lg-5 col-xl-4 p-0 position-relative overflow-hidden">
+                                    <div
+                                        class="col-12 col-md-6 col-lg-5 col-xl-4 p-0 position-relative overflow-hidden">
                                         <a href="#">
-                                            <img class="w-100 home_project_img" src="assets/images/projects.webp" alt="">
+                                            <img class="w-100 home_project_img" src="assets/images/projects.webp"
+                                                alt="">
                                         </a>
                                     </div>
-                                    <div class="col-12 col-md-6 col-lg-5 col-xl-5 mt-5 mt-md-0 ps-0 ps-lg-5 position-relative">
+                                    <div
+                                        class="col-12 col-md-6 col-lg-5 col-xl-5 mt-5 mt-md-0 ps-0 ps-lg-5 position-relative">
                                         <a class="page_link text-uppercase text-center text-md-start p-2" href="#">
                                             <h3 class="primary-heading">Abdullah Aid Projects</h3>
                                             <h3 class="primary-heading">Don't Miss Out on Our Work</h3>
@@ -125,12 +156,15 @@
 
                                 <div class="row align-items-center home_project_row">
 
-                                    <div class="col-12 col-md-6 col-lg-5 col-xl-4 p-0 position-relative overflow-hidden">
+                                    <div
+                                        class="col-12 col-md-6 col-lg-5 col-xl-4 p-0 position-relative overflow-hidden">
                                         <a href="#">
-                                            <img width="100%" height="100%" class="w-100 home_project_img" src="assets/images/ways-to-donate.webp" alt="">
+                                            <img width="100%" height="100%" class="w-100 home_project_img"
+                                                src="assets/images/ways-to-donate.webp" alt="">
                                         </a>
                                     </div>
-                                    <div class="col-12 col-md-6 col-lg-5 col-xl-5 mt-5 mt-md-0 ps-0 ps-lg-5 position-relative">
+                                    <div
+                                        class="col-12 col-md-6 col-lg-5 col-xl-5 mt-5 mt-md-0 ps-0 ps-lg-5 position-relative">
                                         <a class="page_link text-uppercase text-center text-md-start" href="#">
                                             <h3 class="primary-heading">
                                                 Ways to Donate
@@ -149,12 +183,15 @@
 
                                 <div class="row align-items-center home_project_row">
 
-                                    <div class="col-12 col-md-6 col-lg-5 col-xl-4 p-0 position-relative overflow-hidden">
+                                    <div
+                                        class="col-12 col-md-6 col-lg-5 col-xl-4 p-0 position-relative overflow-hidden">
                                         <a href="#">
-                                            <img width="100%" height="100%" class="w-100 home_project_img" src="assets/images/home-event.webp" alt="">
+                                            <img width="100%" height="100%" class="w-100 home_project_img"
+                                                src="assets/images/home-event.webp" alt="">
                                         </a>
                                     </div>
-                                    <div class="col-12 col-md-6 col-lg-5 col-xl-5 mt-5 mt-md-0 ps-0 ps-lg-5 position-relative">
+                                    <div
+                                        class="col-12 col-md-6 col-lg-5 col-xl-5 mt-5 mt-md-0 ps-0 ps-lg-5 position-relative">
                                         <a class="page_link text-uppercase text-center text-md-start" href="#">
                                             <h3 class="primary-heading">
                                                 Comming Events Buy Tickets
@@ -179,7 +216,8 @@
 
                 <!-- Footer Area -->
                 <div class="row justify-content-center align-items-center bg-secondary">
-                    <footer class="col-12 col-lg-10 pt-5 mt-4 d-flex flex-column align-items-center justify-content-center">
+                    <footer
+                        class="col-12 col-lg-10 pt-5 mt-4 d-flex flex-column align-items-center justify-content-center">
                         <img height="100%" src="assets/images/FR-Fundraising-Badge-WO-LR.png" alt="">
 
                         <div class="row pt-5">
@@ -211,7 +249,8 @@
                                 <img class="w-25 " src="assets/images/aa-full-white-logo.svg" alt="">
                             </a>
                             <div class="col-12 aa_copyright text-center pt-5">
-                                <p>Charity Registration Number 1165916 &copy; <a href="#">Abdullah Aid</a> 2023 - All rights
+                                <p>Charity Registration Number 1165916 &copy; <a href="#">Abdullah Aid</a> 2023 - All
+                                    rights
                                     reserved
                                 </p>
                             </div>
@@ -359,7 +398,8 @@
 
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="assets/js/main.js"></script>
 
 </body>
 
