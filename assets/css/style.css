@@ -537,6 +537,26 @@ p, h1, h2, h3, h4, h5, h6, input {
 
 /* ========= Project Detail Swiper Slider CSS - END ========== */
 
+/* .blank_img {
+    background-image: url('../images/white-line.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+} */
+
+.blank_img::before {
+    content: "";
+    display: block;
+    height: 100%;
+    width: 100%;
+    background-image: url('../images/chevron-white.png');
+    background-position: top left;
+    background-repeat: repeat;
+    background-size: 12px 12px;
+    opacity: 0.3;
+    position: absolute;
+    z-index: 0;
+    transition: width 0.8s;
+}
 
 /* ========= Masonary Grid Gallery section ========== */
 
