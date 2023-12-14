@@ -57,8 +57,8 @@
     box-sizing: border-box;
 }
 
-p, h1, h2, h3, h4, h5, h6, input {
-    font-family: 'Area-Extended', 'Arial    ';
+p, h1, h2, h3, h4, h5, h6, input, a {
+    font-family: 'Area-Extended', 'Arial';
 }
 
 .header_section {
@@ -632,6 +632,138 @@ p, h1, h2, h3, h4, h5, h6, input {
     filter: brightness(100%) grayscale(0);
 }
 
+/* wayes to donate css start */
+
+.title_are_web h2 {
+    color: var(--aa-primary);
+    font-family: "Area-Extended-Bold";
+}
+
+.credit_cards_container a {
+    width: 12%;
+    padding: 0 6px;
+    display: inline-block;
+}
+
+.credit_cards_container a img {
+    width: 100%;
+}
+
+.call_are h3 {
+    color: #002740;
+}
+
+.call_are h5 {
+    font-family: "Area-Extended-Bold";
+}
+
+.post_are h5 {
+    font-family: "Area-Extended-Bold";
+}
+
+.post_are p {
+    font-family: "Area-Extended-Black";
+    color: #10ae88;
+}
+
+p {
+    color: var(--aa-secondary);
+    font-size: 20px;
+}
+
+.donation_green_area::before {
+    content: "";
+    display: block;
+    height: 100%;
+    width: 100%;
+    background-image: url('../images/chevron-white.png');
+    background-position: top left;
+    background-repeat: repeat;
+    background-size: 12px 12px;
+    opacity: 0.2;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    transition: width 0.8s;
+}
+
+.donation_blue_area::before {
+    content: "";
+    display: block;
+    height: 100%;
+    width: 100%;
+    background-image: url('../images/chevron-white.png');
+    background-position: top left;
+    background-repeat: repeat;
+    background-size: 12px 12px;
+    opacity: 0.2;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    transition: width 0.8s;
+}
+
+.bank_area h3 {
+    color: var(--aa-primary);
+    font-family: "Area-Extended-Black";
+}
+
+.bank_area p {
+    color: var(--aa-secondary);
+    font-family: "Area-Extended-Black";
+}
+
+.bank_area h4 {
+    color: var(--aa-primary);
+    font-family: "Area-Extended-Bold";
+}
+
+.bank_details li {
+    font-family: "Area-Extended-Bold";
+    color: var(--aa-secondary);
+    line-height: 40px;
+    font-size: 1.6rem;
+}
+
+.bank_details_area hr {
+    border: 1px solid;
+    color: var(--aa-primary);
+}
+
+.bank_details_area h4 {
+    color: var(--aa-primary);
+    font-family: "Area-Extended-Bold";
+}
+
+.fundrising_are h5 {
+    color: var(--aa-primary);
+    font-family: "Area-Extended-Bold";
+}
+
+.fundrising_are a {
+    font-family: "Area-Extended-Black";
+}
+
+.nationl_bank_details li {
+    font-family: "Area-Extended-Black";
+    color: var(--aa-secondary);
+    line-height: 29px;
+}
+
+.nationl_bank_details_center li {
+    font-family: "Area-Extended-Black";
+    color: var(--aa-primary);
+    line-height: 29px;
+}
+
+.wtd_phone {
+    font-family: 'Area-Extended-Black';
+}
+
+/* wayes to donate css End*/
+
 /* ========= Footer section ========== */
 
 .footer_nav a {
@@ -700,5 +832,36 @@ p, h1, h2, h3, h4, h5, h6, input {
 @media screen and (min-width:1440px) {
     .page_title {
         left: 30%;
+    }
+}
+
+@media screen and (min-width: 300px) and (max-width: 991px) {
+    .donation_btn {
+        margin: 120px 0 10px 0;
+    }
+}
+
+@media screen and (min-width: 300px) and (max-width: 768px) {
+    .bank_details li {
+        font-family: "Area-Extended-Black";
+        text-wrap: wrap;
+
+        color: var(--aa-secondary);
+        line-height: 30px;
+        font-size: 12px;
+    }
+
+    .nationl_bank_details li {
+        font-family: "Area-Extended-Black";
+        text-wrap: wrap;
+        line-height: 21px;
+        font-size: 12px;
+    }
+
+    .nationl_bank_details_center li {
+        font-family: "Area-Extended-Black";
+        text-wrap: wrap;
+        line-height: 20px;
+        font-size: 12px;
     }
 }
