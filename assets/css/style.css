@@ -24,6 +24,7 @@
         url('../fonts/area-boldextended.woff') format('woff');
     font-weight: normal;
     font-style: normal;
+    font-display: swap;
 }
 
 @font-face {
@@ -32,6 +33,7 @@
         url('../fonts/area-extraboldextended.woff') format('woff');
     font-weight: normal;
     font-style: normal;
+    font-display: swap;
 }
 
 @font-face {
@@ -40,6 +42,7 @@
         url('../fonts/area-extrablackextended.woff') format('woff');
     font-weight: normal;
     font-style: normal;
+    font-display: swap;
 }
 
 @font-face {
@@ -48,6 +51,7 @@
         url('../fonts/Area-Thin.woff') format('woff');
     font-weight: normal;
     font-style: normal;
+    font-display: swap;
 }
 
 
