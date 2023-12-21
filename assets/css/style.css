@@ -66,11 +66,17 @@ p, h1, h2, h3, h4, h5, h6, input, a {
 }
 
 .header_section {
-    background-image: radial-gradient(75% 220% at 50% 50%, #10AE88 0%, #07585E 0%, #002740 100%);
+    /* background-image: radial-gradient(75% 220% at 50% 50%, #10AE88 0%, #07585E 0%, #002740 100%); */
 }
 
 .main_section {
-    background: radial-gradient(circle, rgba(16, 174, 136, 0.8) 0%, rgba(7, 88, 94, 1) 58%, rgba(0, 39, 64, 1) 100%);
+    /* background: radial-gradient(circle, rgba(16, 174, 136, 0.8) 0%, rgba(7, 88, 94, 1) 58%, rgba(0, 39, 64, 1) 100%); */
+
+    /* New Background */
+    background-image: radial-gradient(circle at right, var(--aa-primary) 0%, var(--aa-secondary) 110%);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: right;
 }
 
 .gallery_main_section {
