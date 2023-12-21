@@ -61,9 +61,29 @@
     box-sizing: border-box;
 }
 
-p, h1, h2, h3, h4, h5, h6, input, a {
+p, h1, h2, h3, h4, h5, h6, input, a, input, select {
     font-family: 'Area-Extended', 'Arial';
 }
+
+optgroup {
+    font-family: 'Area-Extended-Bold', 'Arial';
+    margin: 5px 0px;
+}
+
+option {
+    font-size: 14px;
+    margin-bottom: 5px;
+    font-family: 'Area-Extended';
+}
+
+::selection {
+    background-color: var(--aa-primary);
+}
+
+.form-select {
+    --bs-form-select-bg-img: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%23FFFFFF' stroke-linecap='round' stroke-linejoin='round' stroke-width='4' d='m2 5 6 6 6-6'/%3e%3c/svg%3e");
+}
+
 
 .header_section {
     /* background-image: radial-gradient(75% 220% at 50% 50%, #10AE88 0%, #07585E 0%, #002740 100%); */
@@ -845,6 +865,48 @@ p {
     bottom: -29px;
     left: -75px;
     display: block;
+}
+
+
+/* ========= Modal / Popup  ========== */
+.modal-dialog {
+    margin-left: 30%;
+}
+
+#donateModal.modal.fade .modal-dialog {
+    transform: scale(0.8);
+}
+
+#donateModal.modal.fade.show .modal-dialog {
+    transform: scale(1)
+}
+
+.modal-header {
+    background-image: radial-gradient(circle at right, var(--aa-primary) 30%, var(--aa-secondary) 170%);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.modal_close {
+    color: var(--aa-white);
+    right: 10px;
+    cursor: pointer;
+    font-size: 28px;
+}
+
+.modal_close:hover {
+    color: var(--aa-secondary);
+}
+
+.form_labels {
+    font-family: 'Area-Extended-Black';
+    font-size: 18px;
+}
+
+.form_btns {
+    font-family: 'Area-Extended-Bold';
+    font-size: 18px;
 }
 
 /* ========= Footer section ========== */

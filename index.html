@@ -47,7 +47,7 @@
                             Change for one,
                             Hope for all</h1>
                         <a class="col-10 col-sm-8 col-md-8 col-lg-6 col-xxl-4 w text-center" href="#">
-                            <button type="button"
+                            <button data-bs-toggle="modal" data-bs-target="#donateModal" type="button"
                                 class="btn btn-outline-light px-0 px-md-5 text-uppercase instant_donate w-100">Instant
                                 Donate</button>
                         </a>
@@ -275,7 +275,8 @@
                     <a href="">Sign up</a>
                     <img class="my-2 w-50" src="assets/images/divider-line.png" alt="">
                     <!-- <a href="">More</a> -->
-                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
                         More
                     </a>
                     <ul class="dropdown-menu bg-primary">
@@ -293,7 +294,8 @@
                 </div>
 
                 <div class="pt-4">
-                    <a class="btn btn-outline-light text-uppercase text-center" href="#">
+                    <a data-bs-toggle="modal" data-bs-target="#donateModal"
+                        class="btn btn-outline-light text-uppercase text-center" href="#">
                         <!-- <button type="button" class=""> -->
                         Instant Donate
                         <!-- </button> -->
@@ -399,6 +401,72 @@
                     </div>
                 </div>
             </nav>
+        </div>
+
+        <!-- Bootstrap Modal/Popup -->
+        <div class="modal fade row" id="donateModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+            aria-labelledby="staticBackdropLabel">
+            <div class="modal-dialog-centered modal-dialog">
+
+                <div class="modal-content pb-4 ">
+                    <div class="modal-header">
+                        <h5 class="m-0 text-white text-uppercase">Donate Now</h5>
+                        <span class="modal_close  position-absolute py-4" data-bs-dismiss="modal" aria-label="Close"> <i
+                                class="fa fa-xmark"></i> </span>
+                    </div>
+                    <div class="modal-body ">
+
+                        <h4 class="mt-2 text-uppercase form_labels">Project</h4>
+                        <select class="form-select bg-secondary text-white " name="df-p">
+                            <optgroup label="URGENT">
+                                <option value="5">Syrian Refugees</option>
+                                <option value="119" selected="selected">Winter Warmth</option>
+                                <option value="77">Afghanistan</option>
+                                <option value="94">Dialysis Treatment</option>
+                            </optgroup>
+                            <optgroup label="General">
+                                <option value="80">Bakery Project</option>
+                                <option value="33">Eid Gifts</option>
+                                <option value="11">Empowerment (Income Generation)</option>
+                            </optgroup>
+                            <optgroup label="Pakistan">
+                                <option value="71">Pakistan School Appeal</option>
+                            </optgroup>
+                            <optgroup label="Palestine">
+                                <option value="14">Olive Tree</option>
+                            </optgroup>
+                            <optgroup label="Tanzania">
+                                <option value="95">Orphan Centre</option>
+                            </optgroup>
+                            <optgroup label="United Kingdom">
+                                <option value="25">Administration</option>
+                                <option value="12">UK Community Support</option>
+                            </optgroup>
+                        </select>
+
+                        <h4 class="my-3 text-uppercase form_labels">Amount:</h4>
+                        <div class="input-group mb-3 ">
+                            <span class="input-group-text bg-secondary text-white border-1 border-secondary">$</span>
+                            <input type="text" placeholder="100" class="form-control border-1 border-secondary"
+                                aria-label="Amount (to the nearest dollar)">
+                        </div>
+                        <select class="form-select bg-secondary text-white" aria-label="Default select example">
+                            <option value="">- TYPE OF DONATION -</option>
+                            <option value="1">Lillah/Other</option>
+                            <option value="2">Sadaqah Naafilah</option>
+                            <option value="3">Zakaat</option>
+                        </select>
+                    </div>
+                    <div class="modal-footer flex-column align-items-start border-0">
+                        <h3 class="form_labels text-uppercase">Proceed</h3>
+                        <div>
+                            <button type="button" class="btn btn-secondary me-2 form_btns">Add More</button>
+                            <button type="button" class="btn btn-primary form_btns text-white">Donate Now</button>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
     <!-- end container-fluid h-100 min-vh-100 -->
