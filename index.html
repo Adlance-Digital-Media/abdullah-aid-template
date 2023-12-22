@@ -9,9 +9,6 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="assets/css/bootstrap.css">
 
-    <!-- Font Awesome CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
-        referrerpolicy="no-referrer" />
     <!-- swiper css -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
@@ -21,8 +18,6 @@
     <link rel="preload" href="assets//fonts/Area-Thin.woff2" as="font" type="font/woff2">
     <link rel="stylesheet" href="assets/css/style.css">
 
-    <!-- JQuery Ui CSS CDN -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.13.2/themes/base/jquery-ui.min.css">
 
 </head>
 
@@ -34,7 +29,7 @@
         <div class="row">
 
             <!-- main content  -->
-            <div class="offset-0 offset-md-1 col-12 col-md-8 bg-primary main_section">
+            <div class="offset-0 offset-md-1 col-12 col-md-8 main_section">
 
                 <!-- hero logo section  -->
                 <div class="row py-5 logo_container justify-content-center align-items-center header_section">
@@ -47,7 +42,7 @@
                             Change for one,
                             Hope for all</h1>
                         <a class="col-10 col-sm-8 col-md-8 col-lg-6 col-xxl-4 w text-center" href="#">
-                            <button type="button"
+                            <button data-bs-toggle="modal" data-bs-target="#donateModal" type="button"
                                 class="btn btn-outline-light px-0 px-md-5 text-uppercase instant_donate w-100">Instant
                                 Donate</button>
                         </a>
@@ -62,23 +57,23 @@
                         <div class="swiper projectDetailSlider">
                             <div class="swiper-wrapper">
                                 <div class="swiper-slide">
-                                    <img width="100%" height="100%" class="w-100" src="assets/images/hero-img.jpg"
+                                    <img width="100%" height="500" class="w-100" src="assets/images/hero-img.jpg"
                                         alt="" />
                                 </div>
                                 <div class="swiper-slide">
-                                    <img width="100%" height="100%" class="w-100" src="assets/images/hero-img.jpg"
+                                    <img width="100%" height="500" class="w-100" src="assets/images/hero-img.jpg"
                                         alt="" />
                                 </div>
                                 <div class="swiper-slide">
-                                    <img width="100%" height="100%" class="w-100" src="assets/images/hero-img.jpg"
+                                    <img width="100%" height="500" class="w-100" src="assets/images/hero-img.jpg"
                                         alt="" />
                                 </div>
                             </div>
                             <div class="swiper-button-next custom-next-button">
-                                <img src="./assets/images/whit-arrow.png" alt="" srcset="" />
+                                <img width="100" src="./assets/images/whit-arrow.png" alt="" srcset="" />
                             </div>
                             <div class="swiper-button-prev custom-prev-button">
-                                <img class="ratio-16x9" src="./assets/images/whit-arrow.png" alt="" srcset="" />
+                                <img width="100" class="ratio-16x9" src="./assets/images/whit-arrow.png" alt="" srcset="" />
                             </div>
                         </div>
 
@@ -101,7 +96,7 @@
                                 <a href="#">
                                     <span
                                         class="rounded-5 arrow_circle d-flex justify-content-center align-items-center">
-                                        <img class="w-full" src="assets/images/arrow.svg" alt="">
+                                        <img width="16" class="w-full" src="assets/images/arrow.svg" alt="">
                                     </span>
                                 </a>
                             </div>
@@ -115,7 +110,7 @@
                                 class="col-8 col-md-6 col-lg-5 col-xl-4 col-xxl-3 page_title_container px-1 py-1 position-absolute top-0">
                                 <a class="homepage_title w-100 text-uppercase text-end" href="#">
                                     <h3 class="m-0 p-0 text-secondary page_title_text">Projects</h3>
-                                    <img class="position-absolute top-50 translate-middle title_target_icon"
+                                    <img width="25" class="position-absolute top-50 translate-middle title_target_icon"
                                         src="assets/images/target-icon.png" alt="">
                                 </a>
                             </div>
@@ -134,7 +129,7 @@
                                     <div
                                         class="col-12 col-md-6 col-lg-5 col-xl-4 p-0 position-relative overflow-hidden">
                                         <a href="#">
-                                            <img class="w-100 home_project_img" src="assets/images/projects.webp"
+                                            <img width="100" height="400" class="w-100 home_project_img" src="assets/images/projects.webp"
                                                 alt="">
                                         </a>
                                     </div>
@@ -159,7 +154,7 @@
                                     <div
                                         class="col-12 col-md-6 col-lg-5 col-xl-4 p-0 position-relative overflow-hidden">
                                         <a href="#">
-                                            <img width="100%" height="100%" class="w-100 home_project_img"
+                                            <img width="100%" height="400" class="w-100 home_project_img"
                                                 src="assets/images/ways-to-donate.webp" alt="">
                                         </a>
                                     </div>
@@ -186,7 +181,7 @@
                                     <div
                                         class="col-12 col-md-6 col-lg-5 col-xl-4 p-0 position-relative overflow-hidden">
                                         <a href="#">
-                                            <img width="100%" height="100%" class="w-100 home_project_img"
+                                            <img width="100" height="400" class="w-100 home_project_img"
                                                 src="assets/images/home-event.webp" alt="">
                                         </a>
                                     </div>
@@ -208,7 +203,7 @@
 
                         </div>
                     </div>
-                    <img class="position-absolute start-50 translate-middle page_bottom_logo"
+                    <img width="100" height="100" class="position-absolute start-50 translate-middle page_bottom_logo"
                         src="assets/images/aa-full-white-logo.svg" alt="">
                 </div>
 
@@ -218,7 +213,7 @@
                 <div class="row justify-content-center align-items-center bg-secondary">
                     <footer
                         class="col-12 col-lg-10 pt-5 mt-4 d-flex flex-column align-items-center justify-content-center">
-                        <img height="100%" src="assets/images/FR-Fundraising-Badge-WO-LR.png" alt="">
+                        <img width="250" height="100%" src="assets/images/FR-Fundraising-Badge-WO-LR.png" alt="">
 
                         <div class="row pt-5">
 
@@ -246,7 +241,7 @@
                             </div>
 
                             <a class="col-12 mt-5 text-center" href="/">
-                                <img class="w-25 " src="assets/images/aa-full-white-logo.svg" alt="">
+                                <img width="100" height="100%" class="w-25 " src="assets/images/aa-full-white-logo.svg" alt="">
                             </a>
                             <div class="col-12 aa_copyright text-center pt-5">
                                 <p>Charity Registration Number 1165916 &copy; <a href="#">Abdullah Aid</a> 2023 - All
@@ -276,7 +271,8 @@
                     <a href="">Sign up</a>
                     <img class="my-2 w-50" src="assets/images/divider-line.png" alt="">
                     <!-- <a href="">More</a> -->
-                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
                         More
                     </a>
                     <ul class="dropdown-menu bg-primary">
@@ -294,7 +290,8 @@
                 </div>
 
                 <div class="pt-4">
-                    <a class="btn btn-outline-light text-uppercase text-center" href="#">
+                    <a data-bs-toggle="modal" data-bs-target="#donateModal"
+                        class="btn btn-outline-light text-uppercase text-center" href="#">
                         <!-- <button type="button" class=""> -->
                         Instant Donate
                         <!-- </button> -->
@@ -401,8 +398,79 @@
                 </div>
             </nav>
         </div>
+
+        <!-- Bootstrap Modal/Popup -->
+        <div class="modal fade row" id="donateModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+            aria-labelledby="staticBackdropLabel">
+            <div class="modal-dialog-centered modal-dialog">
+
+                <div class="modal-content pb-4 ">
+                    <div class="modal-header">
+                        <h5 class="m-0 text-white text-uppercase">Donate Now</h5>
+                        <span class="modal_close  position-absolute py-4" data-bs-dismiss="modal" aria-label="Close"> <i
+                                class="fa fa-xmark"></i> </span>
+                    </div>
+                    <div class="modal-body ">
+
+                        <h4 class="mt-2 text-uppercase form_labels">Project</h4>
+                        <select class="form-select bg-secondary text-white " name="df-p">
+                            <optgroup label="URGENT">
+                                <option value="5">Syrian Refugees</option>
+                                <option value="119" selected="selected">Winter Warmth</option>
+                                <option value="77">Afghanistan</option>
+                                <option value="94">Dialysis Treatment</option>
+                            </optgroup>
+                            <optgroup label="General">
+                                <option value="80">Bakery Project</option>
+                                <option value="33">Eid Gifts</option>
+                                <option value="11">Empowerment (Income Generation)</option>
+                            </optgroup>
+                            <optgroup label="Pakistan">
+                                <option value="71">Pakistan School Appeal</option>
+                            </optgroup>
+                            <optgroup label="Palestine">
+                                <option value="14">Olive Tree</option>
+                            </optgroup>
+                            <optgroup label="Tanzania">
+                                <option value="95">Orphan Centre</option>
+                            </optgroup>
+                            <optgroup label="United Kingdom">
+                                <option value="25">Administration</option>
+                                <option value="12">UK Community Support</option>
+                            </optgroup>
+                        </select>
+
+                        <h4 class="my-3 text-uppercase form_labels">Amount:</h4>
+                        <div class="input-group mb-3 ">
+                            <span class="input-group-text bg-secondary text-white border-1 border-secondary">$</span>
+                            <input type="text" placeholder="100" class="form-control border-1 border-secondary"
+                                aria-label="Amount (to the nearest dollar)">
+                        </div>
+                        <select class="form-select bg-secondary text-white" aria-label="Default select example">
+                            <option value="">- TYPE OF DONATION -</option>
+                            <option value="1">Lillah/Other</option>
+                            <option value="2">Sadaqah Naafilah</option>
+                            <option value="3">Zakaat</option>
+                        </select>
+                    </div>
+                    <div class="modal-footer flex-column align-items-start border-0">
+                        <h3 class="form_labels text-uppercase">Proceed</h3>
+                        <div>
+                            <button type="button" class="btn btn-secondary me-2 form_btns">Add More</button>
+                            <button type="button" class="btn btn-primary form_btns text-white">Donate Now</button>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
     <!-- end container-fluid h-100 min-vh-100 -->
+
+    <!-- Font Awesome CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+    <!-- JQuery Ui CSS CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.13.2/themes/base/jquery-ui.min.css">
 
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
