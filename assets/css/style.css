@@ -61,7 +61,7 @@
     box-sizing: border-box;
 }
 
-p, h1, h2, h3, h4, h5, h6, input, a, input, select {
+p, h1, h2, h3, h4, h5, h6, input, a, input, select, button, span, textarea, label, .btn {
     font-family: 'Area-Extended', 'Arial';
 }
 
@@ -78,6 +78,7 @@ option {
 
 ::selection {
     background-color: var(--aa-primary);
+    color: var(--aa-white);
 }
 
 .form-select {
@@ -868,6 +869,39 @@ p {
 }
 
 
+
+
+/* ========= Donation Cart page style  ========== */
+
+.donate_project_title {
+    font-size: 1.4rem;
+    font-family: 'Area-Extended-Bold';
+}
+
+.donated_sub_project_title {
+    font-size: 1rem;
+}
+
+.donate_item_qty {
+    font-size: 0.9rem;
+}
+
+.donate_amount, .your_details, .checkout_form_headings {
+    font-family: 'Area-Extended-Black';
+}
+
+.remove_donation {
+    font-family: 'Area-Extended-Bold';
+}
+
+.total_donated_amount {
+    font-family: 'Area-Extended-Bold';
+}
+
+.form_group_width {
+    min-width: 35%;
+}
+
 /* ========= Modal / Popup  ========== */
 .modal-dialog {
     margin-left: 30%;
@@ -965,6 +999,14 @@ p {
     .logo_container h1 {
         font-size: 2rem;
     }
+
+    .donated_sub_project_title {
+        font-size: 0.8rem;
+    }
+
+    .donate_project_title {
+        font-size: 1rem;
+    }
 }
 
 @media screen and (min-width:992px) and (max-width:1440px) {
@@ -983,6 +1025,10 @@ p {
 @media screen and (min-width: 300px) and (max-width: 991px) {
     .donation_btn {
         margin: 120px 0 10px 0;
+    }
+
+    .page_top_margin {
+        margin-top: calc(10vw - -30px);
     }
 }
 
