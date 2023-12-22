@@ -903,6 +903,7 @@ p {
     min-width: 40%;
 }
 
+
 /* ========= Modal / Popup  ========== */
 .modal-dialog {
     margin-left: 30%;
@@ -1006,6 +1007,10 @@ p {
     }
 
     .donate_project_title {
+        font-size: 1rem;
+    }
+
+    .mobile_btn_txt {
         font-size: 1rem;
     }
 }
