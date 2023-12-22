@@ -883,7 +883,8 @@ p {
 }
 
 .donate_item_qty {
-    font-size: 0.9rem;
+    text-wrap: nowrap;
+    font-size: 0.8rem;
 }
 
 .donate_amount, .your_details, .checkout_form_headings {
