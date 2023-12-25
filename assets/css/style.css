@@ -589,6 +589,9 @@ option {
     transition: width 0.8s;
 }
 
+.quickamount_title{
+    font-size: 0.8rem;
+}
 /* ========= Masonary Grid Gallery section ========== */
 
 #masonry_grid {
