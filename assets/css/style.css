@@ -868,8 +868,9 @@ p {
     display: block;
 }
 
-
-
+.total_amount_btn_txt {
+    font-size: 1.6rem;
+}
 
 /* ========= Donation Cart page style  ========== */
 
@@ -903,6 +904,23 @@ p {
     min-width: 35%;
 }
 
+/* ========= Donation Checkout page style  ========== */
+
+.checkout_total {
+    font-size: 1.6rem;
+    font-family: 'Area-Extended-Black';
+}
+
+.bank_name {
+    font-size: 1.6rem;
+    font-family: 'Area-Extended-Black';
+}
+
+.checkout_bank_details {
+    font-size: 1.2rem;
+    font-family: 'Area-Extended';
+    color: var(--aa-secondary);
+}
 
 /* ========= Modal / Popup  ========== */
 .modal-dialog {
@@ -1014,10 +1032,14 @@ p {
         font-size: 1rem;
     }
 
-    .form_group_width{
+    .form_group_width {
         width: 30%;
         font-size: 0.8rem;
         padding: 0 0 0 10px;
+    }
+
+    .checkout_bank_details {
+        font-size: 0.6rem;
     }
 }
 
