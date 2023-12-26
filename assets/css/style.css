@@ -589,9 +589,10 @@ option {
     transition: width 0.8s;
 }
 
-.quickamount_title{
+.quickamount_title {
     font-size: 0.8rem;
 }
+
 /* ========= Masonary Grid Gallery section ========== */
 
 #masonry_grid {
@@ -966,6 +967,29 @@ p {
     font-size: 18px;
 }
 
+/* ========= Donation Receiev Page Styles ========== */
+
+.donation_received {
+    font-size: 1.6rem;
+}
+
+.donation_received::before {
+    content: "";
+    display: block;
+    height: 100%;
+    width: 100%;
+    background-image: url('../images/chevron-white.png');
+    background-position: top left;
+    background-repeat: repeat;
+    background-size: 12px 12px;
+    opacity: 0.2;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    transition: width 0.8s;
+}
+
 /* ========= Footer section ========== */
 
 .footer_nav a {
@@ -1043,6 +1067,11 @@ p {
 
     .checkout_bank_details {
         font-size: 0.6rem;
+    }
+
+    .donation_received{
+        font-size: 1.3rem;
+        width: 100% !important;
     }
 }
 
