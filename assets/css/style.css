@@ -973,7 +973,11 @@ p {
     font-size: 1.6rem;
 }
 
-.donation_received::before {
+.donation_pending_notice {
+    font-size: 1.2rem;
+}
+
+.donation_received::before, .donation_pending_notice::before {
     content: "";
     display: block;
     height: 100%;
@@ -1000,13 +1004,18 @@ p {
     background-repeat: repeat;
     background-size: 12px 12px;
     opacity: 0.2;
-    /* position: absolute;
-    top: 0;
-    left: 0; */
     z-index: 0;
     transition: width 0.8s;
 }
 
+.bank_transfer_heading {
+    font-size: 1.6rem;
+}
+
+.donor_name_pending{
+    font-size: 1.3rem;
+    font-family: 'Area-Extended-Bold';
+}
 /* ========= Footer section ========== */
 
 .footer_nav a {
@@ -1089,6 +1098,14 @@ p {
     .donation_received {
         font-size: 1.3rem;
         width: 100% !important;
+    }
+
+    .donation_pending_notice {
+        width: 100% !important;
+    }
+
+    .bank_transfer_heading {
+        font-size: 1.5rem;
     }
 }
 

@@ -4,16 +4,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Abdullah Aid - Checkout</title>
+    <title>Abdullah Aid - Pending Donation</title>
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="assets/css/bootstrap.css">
 
     <!-- Font Awesome CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        referrerpolicy="no-referrer" />
 
     <!-- swiper css -->
-    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" /> -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
     <link rel="preload" href="assets//fonts/Area-Bold.woff2" as="font" type="font/woff2">
     <link rel="preload" href="assets//fonts/area-boldextended.woff2" as="font" type="font/woff2">
@@ -22,7 +23,7 @@
     <link rel="stylesheet" href="assets/css/style.css">
 
     <!-- JQuery Ui CSS CDN -->
-    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.13.2/themes/base/jquery-ui.min.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.13.2/themes/base/jquery-ui.min.css">
 
 </head>
 
@@ -34,77 +35,63 @@
         <div class="row">
 
             <!-- Main content  -->
-            <div class="offset-0 offset-lg-1 col-12 col-lg-8 bg-primary main_section">
+            <div class="offset-0 offset-lg-1 col-12 col-lg-8 bg-primary main_section page_top_margin">
 
                 <!-- Content Row  -->
-                <div class="row pb-5 page_top_margin">
-                    <div class="col-12 p-0 ">
+                <div class="row pb-5">
+
+                    <div class="col-1 p-0 d-none d-md-flex justify-content-center align-items-center position-relative">
+                        <div class="side_pattern_strip"></div>
+                    </div>
+                    <div class="col-md-10 p-0 ">
 
                         <!-- <=============== Section 1 =========> -->
-                        <section class="row p-m m-0 px-lg-4 hero_section">
-                            <div class="offset-0 col-12 mt-3 mt-lg-0 py-3 ps-2 ps-lg-2 donation_btn">
-                                <a class="text-decoration-none text-white" href="#">
-                                    <h1>Payment</h1>
-                                </a>
-                            </div>
-                        </section>
+                        <section class="row mx-0 mt-5 py-5 bg-white">
 
-                        <!-- <=============== Section 2 =========> -->
-                        <section class="row px-2 m-0 px-lg-4 bg-white py-5">
-                            <div class="col-6 col-md-8 col-xxl-9 text-start text-md-end text-uppercase">
-                                <h1 class="m-0 checkout_total">Total</h1>
-                            </div>
-                            <div class="p-0 col-6 col-md-4 col-xxl-3 text-start text-md-end">
-                                <button class="w-100 h-100 text-white bg-secondary border-0 total_amount_btn_txt">
-                                    &pound; 20.00</button>
+                            <div class="col-12 mt-3 mt-lg-0 p-2 ">
+
+                                <h1
+                                    class="text-center bg-primary w-75 mx-auto py-3 px-2 m-0 text-white donation_received position-relative text-uppercase">
+                                    YOUR DONATION is PENDING</h1>
                             </div>
 
-                            <div class="p-0 col-12 col-md-10 col-xxl-7 mt-4">
-                                <div class="form-check mb-2">
-                                    <input disabled checked class="form-check-input" name="gift_aid" type="checkbox" value="1"
-                                        id="chk_gift_aid">
-                                    <label class="form-check-label" for="chk_gift_aid">
-                                        Cover transaction costs for card payments
-                                        (this option will be removed if you choose a
-                                        different payment method).
-                                    </label>
-                                </div>
-                                <div class="form-check mb-2">
-                                    <input disabled class="form-check-input" type="checkbox" name="payment_cover_fees"
-                                        value="16.39" id="payment_cover_fees">
-                                    <label class="form-check-label" for="payment_cover_fees">
-                                        If paying by card, I'd like to help cover the transaction fees of
-                                        £0.39 for my donation
-                                    </label>
-                                </div>
+                            <div class="offset-0 offset-md-1 col-12 col-md-11 mt-3 p-2 ">
+
+                                <h2 class="text-center w-75 mx-auto m-0 text-secondary ">Receipt #AA123456 </h2>
+                                <h3 class="text-center fs-0 mt-2 text-secondary donor_name_pending">For Irfan Sadiq</h3>
+                                <h4 class="text-center w-75 mx-auto m-0 text-secondary py-2 fs-2"> &pound;100.00 </h4>
+                                <p>
+                                    Assalamu 'Alaykum
+                                </p>
+                                <p>
+                                    We thank you for your kind donation, your receipt will be emailed to you once we've
+                                    received your payment.
+                                </p>
                             </div>
 
-                            <div class="col-12 p-0">
-                                <div class="row gx-3 gy-3">
-                                    <div class="col-12 col-md-6">
-                                        <button id="showpaymentoptions"
-                                            class="btn btn-lg btn-primary rounded-1 text-white w-100 mobile_btn_txt">
-                                            <span><i class="fa fa-credit-card me-2"></i></span> Pay by card
-                                        </button>
-                                    </div>
-                                    <div class="col-12 col-md-6">
-                                        <button id="showpaymentoptions"
-                                            class="btn btn-lg rounded-1 btn-secondary text-white w-100 mobile_btn_txt ">
-                                            <span><i class="fa fa-bank me-2"></i></span> Bank Transfer
-                                        </button>
-                                    </div>
-                                </div>
+                            
+
+                            <div class="col-12 mt-3 mt-lg-0 p-2 ">
+
+                                <h4
+                                    class="text-center bg-secondary w-75 mx-auto py-3 px-2 m-0 text-white donation_pending_notice position-relative">
+                                    <strong>Important Note:</strong>
+                                    When making the payment, please ensure you add the payment reference number above as
+                                    the transfer reference so we can process it faster.
+                                </h4>
                             </div>
 
-                            <!-- Submit Button -->
-                            <div class="p-0 col-12 mt-5">
-                                <p>Once you click on complete, you'll be provided with a reference to put when making
-                                    the bank transfer.</p>
+                            <div class="offset-0 offset-md-1 col-12 col-md-11 mt-5 p-2 ">
+                                <h2 class="text-primary bank_transfer_heading m-0">
+                                    BANK TRANSFER/STANDING ORDER
+                                </h2>
+                                <p class="">(PLEASE ENSURE ALL INTERNATIONAL TRANSFERS ARE MADE IN GBP)</p>
                             </div>
 
                             <!-- Bank Trasnfer Details -->
-                            <div class="p-0 col-12 mt-4 py-4 border-bottom border-top border-2 border-primary">
-                                <div class="row gx-2 gy-2 text-uppercase">
+                            <div class="offset-0 offset-md-1 col-12 col-md-10 mt-3 p-2  ">
+                                <div
+                                    class="row gx-2 gy-2 py-4 text-uppercase border-bottom border-top border-2 border-primary">
                                     <h2 class="text-primary bank_name">AL RAYAN BANK</h2>
                                     <div class="col-6">
                                         <h4 class="checkout_bank_details">Account Name: </h4>
@@ -137,22 +124,20 @@
                                         <h4 class="checkout_bank_details">GB18ARAY30008301315801</h4>
                                     </div>
                                 </div>
-
                             </div>
 
                         </section>
 
-                        <!-- <=============== Section End 2 =========> -->
 
 
                     </div>
 
                     <!-- Page Title Sidebar -->
 
-                    <!-- <div class="col-md-1 justify-content-center d-none d-lg-flex">
-                        <h1 class="aa_page_title d-flex justify-content-start align-items-center">Ways to Donate
-                        </h1>
-                    </div> -->
+                    <div class="col-md-1 justify-content-center d-none d-md-flex">
+                        <h2 class="aa_page_title d-flex justify-content-start align-items-center">Donation Received
+                        </h2>
+                    </div>
                 </div>
 
                 <!-- ================= page content ====================== -->
@@ -215,7 +200,7 @@
             <!-- end col-md-9 main content -->
 
             <!-- main menu  -->
-            <header class="col-md-3 text-start ps-4 pt-3 d-none d-lg-block sticky-top navbar-nav-scroll">
+            <header class="col-lg-3 text-start ps-4 pt-3 d-none d-lg-block sticky-top navbar-nav-scroll">
                 <time class="aa_time" datetime="2023-11-16 20:00">22 Sept 2023</time>
                 <p class="aa_islamic_time" datetime="2023-02-14 20:00">16 Raj. 1445 AH</p>
                 <nav class="d-flex flex-column text-uppercase text-white nav_container">
@@ -227,7 +212,7 @@
                     <!-- <a href="donations-explained.html">Donations Explained </a> -->
                     <a href="">Sign up</a>
                     <img class="my-2 w-50" src="assets/images/divider-line.png" alt="">
-                    <!-- <a href="#" class="nav-item dropdown">More</a> -->
+                    <!-- <a href="">More</a> -->
                     <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
                         aria-expanded="false">
                         More
