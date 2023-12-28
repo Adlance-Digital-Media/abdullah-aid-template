@@ -276,8 +276,18 @@ option {
     color: var(--aa-white);
 }
 
+.dropdown-menu {
+    padding: 0;
+    border-radius: 0;
+}
+
 .dropdown-menu li {
     border-bottom: 1px solid white;
+
+}
+
+.dropdown-menu li:last-child {
+    border-bottom: none;
 }
 
 .navbar-nav .nav-link.active, .navbar-nav .nav-link.show {
@@ -1123,7 +1133,7 @@ p {
         margin-right: 0;
     }
 
-    .form_btns{
+    .form_btns {
         width: 100%;
         border-radius: 0;
         margin-bottom: 10px;
