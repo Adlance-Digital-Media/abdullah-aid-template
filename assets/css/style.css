@@ -276,6 +276,10 @@ option {
     color: var(--aa-white);
 }
 
+.dropdown-menu li {
+    border-bottom: 1px solid white;
+}
+
 .navbar-nav .nav-link.active, .navbar-nav .nav-link.show {
     color: var(--aa-primary);
 }
@@ -965,6 +969,7 @@ p {
 .form_btns {
     font-family: 'Area-Extended-Bold';
     font-size: 18px;
+    border-radius: 0;
 }
 
 /* ========= Donation Receiev Page Styles ========== */
@@ -1012,10 +1017,11 @@ p {
     font-size: 1.6rem;
 }
 
-.donor_name_pending{
+.donor_name_pending {
     font-size: 1.3rem;
     font-family: 'Area-Extended-Bold';
 }
+
 /* ========= Footer section ========== */
 
 .footer_nav a {
@@ -1107,6 +1113,21 @@ p {
     .bank_transfer_heading {
         font-size: 1.5rem;
     }
+
+    .modal {
+        margin: 0;
+    }
+
+    .modal-dialog {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .form_btns{
+        width: 100%;
+        border-radius: 0;
+        margin-bottom: 10px;
+    }
 }
 
 @media screen and (min-width:992px) and (max-width:1440px) {
@@ -1130,6 +1151,7 @@ p {
     .page_top_margin {
         margin-top: calc(10vw - -30px);
     }
+
 }
 
 @media screen and (min-width: 300px) and (max-width: 768px) {
