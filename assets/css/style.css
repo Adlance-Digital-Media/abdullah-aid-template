@@ -281,9 +281,12 @@ option {
     border-radius: 0;
 }
 
+.dropdown-menu a {
+    font-size: 1.3rem;
+}
+
 .dropdown-menu li {
     border-bottom: 1px solid white;
-
 }
 
 .dropdown-menu li:last-child {
@@ -320,7 +323,6 @@ option {
 
 .mobile_menu_bar span {
     writing-mode: vertical-rl;
-    /* min-width: 20px; */
     color: #fff;
     font-size: 1.5rem;
     font-family: 'Area-Extended';
