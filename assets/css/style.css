@@ -61,7 +61,7 @@
     box-sizing: border-box;
 }
 
-p, h1, h2, h3, h4, h5, h6, input, a, input, select, button, span, textarea, label, .btn {
+p, h1, h2, h3, h4, h5, h6, input, a, input, select, button, span, textarea, label, .btn, li {
     font-family: 'Area-Extended', 'Arial';
 }
 
@@ -1032,6 +1032,9 @@ p {
 .donor_name_pending {
     font-size: 1.3rem;
     font-family: 'Area-Extended-Bold';
+}
+.donations_explained_text p{
+    font-family: 'Area-thin', 'Arial';
 }
 
 /* ========= Footer section ========== */
