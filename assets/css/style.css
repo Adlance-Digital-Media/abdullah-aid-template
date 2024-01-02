@@ -1046,6 +1046,20 @@ p {
     font-family: 'Area-Extended-Black';
 }
 
+.aa_lists_marker li {
+    margin-bottom: 30px;
+    font-size: 1.2rem;
+    display: flex;
+}
+
+.aa_list_bullets {
+    flex-shrink: 0;
+    width: 25px;
+    height: 25px;
+    margin-right: 10px;
+    background-color: var(--aa-primary);
+}
+
 /* ========= Footer section ========== */
 
 .footer_nav a {
