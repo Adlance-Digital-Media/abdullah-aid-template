@@ -1033,8 +1033,17 @@ p {
     font-size: 1.3rem;
     font-family: 'Area-Extended-Bold';
 }
-.donations_explained_text p{
+
+.donations_explained_text p {
     font-family: 'Area-thin', 'Arial';
+}
+
+.sub_project_img {
+    height: 200px;
+}
+
+.project_heading {
+    font-family: 'Area-Extended-Black';
 }
 
 /* ========= Footer section ========== */
