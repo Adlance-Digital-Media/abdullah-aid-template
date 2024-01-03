@@ -1101,6 +1101,16 @@ p {
     text-align: left;
 }
 
+.aa_contact_map {
+    transform: scale(1.6);
+}
+.msg_box_height{
+    height: 40px;
+}
+.contact_details h2, a{
+    font-family: 'Area-Extended-Bold';
+}
+
 /* ========= Footer section ========== */
 
 .footer_nav a {
