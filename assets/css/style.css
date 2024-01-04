@@ -593,7 +593,7 @@ option {
 .blank_img::before {
     content: "";
     display: block;
-    height: 100%;
+    height: 400px;
     width: 100%;
     background-image: url('../images/chevron-white.png');
     background-position: top left;
@@ -1104,13 +1104,22 @@ p {
 .aa_contact_map {
     transform: scale(1.6);
 }
-.msg_box_height{
+
+.msg_box_height {
     height: 40px;
 }
-.contact_details h2, a{
+
+.contact_details h2, a {
     font-family: 'Area-Extended-Bold';
 }
 
+.desc_txt p, li, a {
+    font-size: 1rem;
+}
+
+.desc_txt h3{
+    font-size: 1.4rem;
+}
 /* ========= Footer section ========== */
 
 .footer_nav a {
