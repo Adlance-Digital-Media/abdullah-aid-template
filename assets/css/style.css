@@ -281,12 +281,45 @@ option {
     border-radius: 0;
 }
 
+.dropdown-menu::before {
+    /* opacity: 0.5;
+    display: block;
+    content: "";
+    width: 100%;
+    position: absolute;
+    right: 0;
+    height: 100%;
+    top: 0;
+    background-color: #F2F2F2;
+    background-image: url('https://wirelessfestival.co.uk/assets/images/chevron-dark.png');
+    background-position: top right;
+    background-repeat: repeat;
+    background-size: 12px 12px; */
+
+    content: "";
+    display: block;
+    height: 100%;
+    width: 100%;
+    background-image: url(../images/chevron-white.png);
+    background-position: top left;
+    background-repeat: repeat;
+    background-size: 12px 12px;
+    opacity: 0.2;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    transition: width 0.8s;
+}
+
 .dropdown-menu a {
-    font-size: 1.3rem;
+    font-size: 1.1rem;
 }
 
 .dropdown-menu li {
     border-bottom: 1px solid white;
+    position: relative;
+    z-index: 2;
 }
 
 .dropdown-menu li:last-child {
@@ -351,7 +384,7 @@ option {
 
 
 .primary-heading {
-    font-family: Area;
+    font-family: 'Area-Extended-Black';
     font-size: 25px !important;
     font-weight: 800;
     line-height: 28px;
@@ -1117,9 +1150,10 @@ p {
     font-size: 1rem;
 }
 
-.desc_txt h3{
+.desc_txt h3 {
     font-size: 1.4rem;
 }
+
 /* ========= Footer section ========== */
 
 .footer_nav a {
