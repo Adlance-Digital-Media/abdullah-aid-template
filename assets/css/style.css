@@ -1154,6 +1154,34 @@ p {
     font-size: 1.4rem;
 }
 
+/* ========= Hero section Animation ========== */
+.hero_content {
+    z-index: 5;
+}
+
+.animated_pattern {
+    right: -50px;
+    top: 0;
+    position: absolute;
+    z-index: 4;
+    width: 50%;
+    opacity: 0.3;
+    height: 100%;
+    object-fit: cover;
+}
+
+.animated_pattern_full {
+    right: -200px;
+    top: 10px;
+    position: absolute;
+    z-index: 3;
+    width: 80%;
+    opacity: 0.1;
+    /* height: 100%; */
+    object-fit: cover;
+    transform: scale(0.9);
+}
+
 /* ========= Footer section ========== */
 
 .footer_nav a {

@@ -23,6 +23,28 @@ for (var i = 0; i < imgDefer.length; i++) {
     }
 }
 
+// Gsap Animation:
+let tl = gsap.timeline({ repeat: -1, repeatDelay: 1 });
+
+tl.to(".animated_pattern", {
+    y: '-50px',
+    scale:'1.1',
+    ease: "power1.inOut",
+    duration: 3,
+    opacity:'0.1',
+    yoyo: true,
+    repeat: -1
+})
+
+// tl.from(".animated_pattern_full", {
+
+//     y: '20px',
+//     duration: 3,
+//     opacity:'0.1',
+//     yoyo: true,
+//     repeat: -1
+// })
+
 // Light Gallery Init
 lightGallery(document.getElementById('masonry_grid'), {
     plugins: [lgThumbnail],
