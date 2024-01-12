@@ -1154,6 +1154,10 @@ p {
     font-size: 1.4rem;
 }
 
+.description_area img{
+    width:100%;
+}
+
 /* ========= Hero section Animation ========== */
 .hero_content {
     z-index: 5;
