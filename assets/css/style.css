@@ -446,15 +446,23 @@ option {
 }
 
 /* project page show project with image  */
-.project-section-container {
+.project_section_container {
     filter: brightness(160%) grayscale(100%);
     transition: filter 0.3s ease-in-out;
 }
 
 /* Reduce grayscale and adjust brightness on hover */
-.project-section-container:hover {
+.project_section_container {
+    background-size: 100%;
+    background-position: center;
+    transition: background-size 0.6s;
+}
+
+.project_row:hover .project_section_container {
     filter: brightness(100%) grayscale(0);
     background: linear-gradient(0);
+    background-size: 105% !important;
+    transition: background-size 1.2s !important;
 }
 
 .home_project_row::before {
@@ -704,11 +712,11 @@ option {
     height: 130px;
 }
 
-.project-section-container a {
+.project_section_container a {
     filter: brightness(100%) grayscale(0) !important;
 }
 
-.project-section-container a h2 {
+.project_section_container a h2 {
     font-size: 1.6rem;
     transition: 0.7s;
     font-family: 'Area-Extended-Black';
@@ -1154,8 +1162,15 @@ p {
     font-size: 1.4rem;
 }
 
-.description_area img{
-    width:100%;
+.description_area img {
+    width: 100%;
+}
+
+.description_area p {
+    font-family: "Poppins", "sans-serif" !important;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 17px;
 }
 
 /* ========= Hero section Animation ========== */
@@ -1168,7 +1183,7 @@ p {
     top: 0;
     position: absolute;
     z-index: 4;
-    width: 50%;
+    width: 70%;
     opacity: 0.3;
     height: 100%;
     object-fit: cover;
@@ -1348,5 +1363,17 @@ p {
         text-wrap: wrap;
         line-height: 20px;
         font-size: 12px;
+    }
+}
+
+@media screen and (min-width:1630px) {
+    .animated_pattern {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width:500px) {
+    .animated_pattern {
+        width: 100%;
     }
 }
