@@ -1086,6 +1086,11 @@ p {
 
 .accordian_heading button {
     font-size: 1.8rem;
+    text-transform: uppercase;
+}
+
+.accordian_subheading button {
+    font-size: 1.6rem;
 }
 
 .sub_project_img {
@@ -1356,6 +1361,13 @@ p {
         margin-top: calc(10vw - -30px);
     }
 
+    .accordian_heading button {
+        font-size: 1.2rem;
+    }
+
+    .accordian_subheading button {
+        font-size: 1.2rem;
+    }
 }
 
 @media screen and (min-width: 300px) and (max-width: 768px) {
