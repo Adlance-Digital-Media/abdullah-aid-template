@@ -81,6 +81,10 @@ option {
     color: var(--aa-white);
 }
 
+.accordion-button:focus {
+    box-shadow: none;
+}
+
 .form-select {
     --bs-form-select-bg-img: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%23FFFFFF' stroke-linecap='round' stroke-linejoin='round' stroke-width='4' d='m2 5 6 6 6-6'/%3e%3c/svg%3e");
 }
@@ -1075,8 +1079,13 @@ p {
     font-family: 'Area-Extended-Bold';
 }
 
-.donations_explained_text p {
-    font-family: 'Area-thin', 'Arial';
+.accordion-body p {
+    font-family: 'Poppins', 'Arial';
+    font-size: 17px;
+}
+
+.accordian_heading button {
+    font-size: 1.8rem;
 }
 
 .sub_project_img {
@@ -1174,7 +1183,7 @@ p {
     font-size: 17px;
 }
 
-.gift_aid_body p, li{
+.gift_aid_body p, li {
     font-family: "Poppins", "sans-serif" !important;
     font-weight: 400;
     font-style: normal;
