@@ -103,6 +103,9 @@ option {
     background-repeat: no-repeat;
     background-position: right;
 }
+.container-fluid{
+    max-width:1920px;
+}
 
 .gallery_main_section {
     background: rgb(16, 174, 136);
@@ -1205,10 +1208,10 @@ p {
     top: 0;
     position: absolute;
     z-index: 4;
-    width: 80%;
+    width: 100%;
     opacity: 0.3;
     height: 100%;
-    object-fit: contain;
+    object-fit: cover;
 }
 
 .animated_pattern_full {
@@ -1434,9 +1437,10 @@ p {
     }
 }
 
-@media screen and (max-width:500px) {
+@media screen and (max-width:600px) {
     .animated_pattern {
         width: 100%;
+        object-fit: contain;
     }
 }
 
