@@ -1223,6 +1223,39 @@ p {
     transform: scale(0.9);
 }
 
+.countries_container {
+    height: 500px;
+}
+
+.country_dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    background-color: var(--aa-secondary);
+    animation: pulse-animation 2s infinite;
+    cursor: pointer;
+}
+
+.tooltip {
+    --bs-tooltip-bg: var(--aa-secondary);
+    --bs-tooltip-border-radius: 0;
+}
+
+/* .country_dot:hover {
+    animation: pulse-animation 2s infinite;
+} */
+
+/* Country Dot Animation */
+@keyframes pulse-animation {
+    0% {
+        box-shadow: 0 0 0 0px rgba(0, 0, 0, 0.3);
+    }
+
+    100% {
+        box-shadow: 0 0 0 20px rgba(0, 0, 0, 0);
+    }
+}
+
 /* ========= Footer section ========== */
 
 .footer_nav a {
@@ -1404,5 +1437,245 @@ p {
 @media screen and (max-width:500px) {
     .animated_pattern {
         width: 100%;
+    }
+}
+
+/* Where we work Countries dots positining according to viewport screens */
+
+@media screen and (min-width:767px) {
+
+    .uk_dot {
+        left: 321px;
+        top: 150px;
+    }
+
+    .canada_dot {
+        left: 378px;
+        top: 150px;
+    }
+
+    .australia_dot {
+        right: 103px;
+        bottom: 135px;
+    }
+
+    .country4_dot {
+        right: 340px;
+        bottom: 138px;
+    }
+
+    .country5_dot {
+        right: 332px;
+        bottom: 165px;
+    }
+
+    .country6_dot {
+        right: 325px;
+        bottom: 189px;
+    }
+
+    .country7_dot {
+        right: 332px;
+        bottom: 210px;
+    }
+
+    .country8_dot {
+        right: 315px;
+        bottom: 230px;
+    }
+
+    .country9_dot {
+        right: 290px;
+        bottom: 254px;
+    }
+}
+
+@media screen and (min-width:992px) {
+
+    .uk_dot {
+        left: 228px;
+        top: 105px;
+    }
+
+    .canada_dot {
+        left: 263px;
+        top: 105px;
+    }
+
+    .australia_dot {
+        right: 75px;
+        bottom: 240px;
+    }
+
+    .country4_dot {
+        right: 243px;
+        bottom: 244px;
+    }
+
+    .country5_dot {
+        right: 235px;
+        bottom: 271px;
+    }
+
+    .country6_dot {
+        right: 230px;
+        bottom: 290px;
+    }
+
+    .country7_dot {
+        right: 235px;
+        bottom: 310px;
+    }
+
+    .country8_dot {
+        right: 225px;
+        bottom: 315px;
+    }
+
+    .country9_dot {
+        right: 206px;
+        bottom: 326px;
+    }
+}
+
+@media screen and (min-width:1200px) {
+    .uk_dot {
+        left: 321px;
+        top: 150px;
+    }
+
+    .canada_dot {
+        left: 372px;
+        top: 150px;
+    }
+
+    .australia_dot {
+        right: 102px;
+        bottom: 139px;
+    }
+
+    .country4_dot {
+        right: 341px;
+        bottom: 144px
+    }
+
+    .country5_dot {
+        right: 335px;
+        bottom: 171px
+    }
+
+    .country6_dot {
+        right: 328px;
+        bottom: 190px
+    }
+
+    .country7_dot {
+        right: 335px;
+        bottom: 220px
+    }
+
+    .country8_dot {
+        right: 315px;
+        bottom: 238px
+    }
+
+    .country9_dot {
+        right: 290px;
+        bottom: 256px;
+    }
+}
+
+@media screen and (min-width:1400px) {
+    .uk_dot {
+        left: 340px;
+        top: 126px;
+    }
+
+    .canada_dot {
+        left: 381px;
+        top: 126px;
+    }
+
+    .australia_dot {
+        right: 148px;
+        bottom: 191px;
+    }
+
+    .country4_dot {
+        right: 355px;
+        bottom: 194px;
+    }
+
+    .country5_dot {
+        right: 347px;
+        bottom: 221px;
+    }
+
+    .country6_dot {
+        right: 338px;
+        bottom: 240px;
+    }
+
+    .country7_dot {
+        right: 347px;
+        bottom: 260px;
+    }
+
+    .country8_dot {
+        right: 330px;
+        bottom: 270px;
+    }
+
+    .country9_dot {
+        right: 311px;
+        bottom: 288px;
+    }
+}
+
+@media screen and (min-width:1600px) {
+
+    .uk_dot {
+        left: 462px;
+        top: 176px;
+    }
+
+    .canada_dot {
+        left: 529px;
+        top: 176px;
+    }
+
+    .australia_dot {
+        right: 205px;
+        bottom: 69px;
+    }
+
+    .country4_dot {
+        right: 484px;
+        bottom: 76px;
+    }
+
+    .country5_dot {
+        right: 476px;
+        bottom: 101px;
+    }
+
+    .country6_dot {
+        right: 464px;
+        bottom: 130px;
+    }
+
+    .country7_dot {
+        right: 476px;
+        bottom: 160px;
+    }
+
+    .country8_dot {
+        right: 458px;
+        bottom: 180px;
+    }
+
+    .country9_dot {
+        right: 431px;
+        bottom: 207px;
     }
 }
