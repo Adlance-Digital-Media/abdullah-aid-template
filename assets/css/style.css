@@ -423,8 +423,8 @@ option {
     color: var(--aa-white);
     writing-mode: vertical-rl;
     position: relative;
-    font-size: 2rem;
-    font-family: 'Area-Extended-Black', 'Arial';
+    font-size: 1.7rem;
+    font-family: 'Area-Extended-Bold', 'Arial';
     text-wrap: nowrap;
     line-height: 1px;
 }
@@ -433,7 +433,7 @@ option {
 .aa_page_title::before {
     display: block;
     content: "";
-    width: 8px;
+    width: 6px;
     height: 200px;
     margin-bottom: 20px;
     background-color: var(--aa-white);
