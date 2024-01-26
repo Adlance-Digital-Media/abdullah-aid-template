@@ -1498,6 +1498,36 @@ p {
         left: 402px;
         top: 164px;
     }
+
+    .country11_dot {
+        left: 402px;
+        top: 164px;
+    }
+
+    .country12_dot {
+        left: 410px;
+        top: 180px;
+    }
+
+    .country13_dot {
+        left: 433px;
+        top: 197px;
+    }
+
+    .country14_dot {
+        left: 513px;
+        top: 255px;
+    }
+
+    .country15_dot {
+        left: 525px;
+        top: 227px;
+    }
+
+    .country16_dot {
+        left: 305px;
+        top: 256px;
+    }
 }
 
 @media screen and (min-width:992px) {
@@ -1551,6 +1581,36 @@ p {
         left: 290px;
         top: 120px;
     }
+
+    .country11_dot {
+        left: 309px;
+        top: 133px;
+    }
+
+    .country12_dot {
+        left: 309px;
+        top: 133px;
+    }
+
+    .country13_dot {
+        left: 298px;
+        top: 148px;
+    }
+
+    .country14_dot {
+        left: 363px;
+        top: 176px;
+    }
+
+    .country15_dot {
+        left: 373px;
+        top: 159px;
+    }
+
+    .country16_dot {
+        left: 215px;
+        top: 179px;
+    }
 }
 
 @media screen and (min-width:1200px) {
@@ -1603,6 +1663,36 @@ p {
         left: 395px;
         top: 170px;
     }
+
+    .country11_dot {
+        left: 415px;
+        top: 180px;
+    }
+
+    .country12_dot {
+        left: 430px;
+        top: 190px;
+    }
+
+    .country13_dot {
+        left: 415px;
+        top: 210px;
+    }
+
+    .country14_dot {
+        left: 508px;
+        top: 252px;
+    }
+
+    .country15_dot {
+        left: 517px;
+        top: 229px;
+    }
+
+    .country16_dot {
+        left: 304px;
+        top: 254px;
+    }
 }
 
 @media screen and (min-width:1400px) {
@@ -1654,6 +1744,36 @@ p {
     .country10_dot {
         left: 401px;
         top: 138px
+    }
+
+    .country11_dot {
+        left: 420px;
+        top: 150px
+    }
+
+    .country12_dot {
+        left: 420px;
+        top: 150px
+    }
+
+    .country13_dot {
+        left: 425px;
+        top: 170px
+    }
+
+    .country14_dot {
+        left: 497px;
+        top: 210px;
+    }
+
+    .country15_dot {
+        left: 508px;
+        top: 191px;
+    }
+
+    .country16_dot {
+        left: 321px;
+        top: 212px;
     }
 }
 
@@ -1708,8 +1828,34 @@ p {
         left: 560px;
         top: 190px;
     }
+
     .country11_dot {
         left: 570px;
         top: 210px;
+    }
+
+    .country12_dot {
+        left: 590px;
+        top: 220px;
+    }
+
+    .country13_dot {
+        left: 570px;
+        top: 230px;
+    }
+
+    .country14_dot {
+        left: 685px;
+        top: 302px;
+    }
+
+    .country15_dot {
+        left: 697px;
+        top: 277px;
+    }
+
+    .country16_dot {
+        left: 442px;
+        top: 301px;
     }
 }
