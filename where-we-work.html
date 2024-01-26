@@ -83,6 +83,12 @@
 
                                     <!-- Country9 -->
                                     <div data-bs-toggle="tooltip" data-bs-placement="right" data-bs-title="Country9" data-bs-custom-class="aa_tooltip" class="country_dot position-absolute country9_dot"></div>
+
+                                    <!-- Country10 -->
+                                    <div data-bs-toggle="tooltip" data-bs-placement="right" data-bs-title="Country10" data-bs-custom-class="aa_tooltip" class="country_dot position-absolute country10_dot"></div>
+
+                                    <!-- Country11 -->
+                                    <div data-bs-toggle="tooltip" data-bs-placement="right" data-bs-title="Country11" data-bs-custom-class="aa_tooltip" class="country_dot position-absolute country11_dot"></div>
                                 
                                 </div>
                             </div>
@@ -279,29 +285,35 @@
             <!-- end col-md-9 main content -->
 
             <!-- main menu  -->
-            <header class="col-lg-3 text-start ps-4 pt-3 d-none d-lg-block sticky-top navbar-nav-scroll">
+            <header class="col-md-3 text-start ps-4 pt-3 d-none d-lg-block sticky-top navbar-nav-scroll">
                 <time class="aa_time" datetime="2023-11-16 20:00">22 Sept 2023</time>
                 <p class="aa_islamic_time" datetime="2023-02-14 20:00">16 Raj. 1445 AH</p>
                 <nav class="d-flex flex-column text-uppercase text-white nav_container">
                     <a href="index.html">Home</a>
-                    <a href="projects.html">Projects</a>
-                    <a href="">Info</a>
-                    <a href="">News</a>
-                    <a href="">Volunteer</a>
+                    <a href="our-projects.html">Projects</a>
+                    <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" href="#">About Us</a>
+                    <ul class="dropdown-menu bg-primary custom-dropdown-bg">
+                        <li><a class="dropdown-item" href="about-us.html">Who We Are</a></li>
+                        <li><a class="dropdown-item" href="where-we-work.html">Where We Work</a></li>
+                    </ul>
+                    <a href="donation-pending.html">Volunteer</a>
+                    <a href="events.html">Events</a>
+                    <a href="ways-to-donate.html">Ways to Donate</a>
                     <!-- <a href="donations-explained.html">Donations Explained </a> -->
                     <a href="">Sign up</a>
                     <img class="my-2 w-50" src="assets/images/divider-line.png" alt="">
                     <!-- <a href="">More</a> -->
-                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                        aria-expanded="false">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                         More
                     </a>
                     <ul class="dropdown-menu bg-primary">
                         <li><a class="dropdown-item" href="donate.html">Cart</a></li>
+                        <li><a class="dropdown-item" href="checkout.html">Checkout</a></li>
                         <li><a class="dropdown-item" href="ways-to-donate.html">Ways to Donate</a></li>
+                        <li><a class="dropdown-item" href="where-we-work.html">Where We Work</a></li>
                         <li><a class="dropdown-item" href="project-detail.html">Project Details</a></li>
                     </ul>
-                    <a href="photos.html">Photos</a>
+                    <a href="contact.html">Contact</a>
                 </nav>
                 <div class="pt-4 d-flex w-full p-1 header_social_icons">
                     <a href="#"> <i class="fa-brands fa-instagram"></i> </a>
@@ -310,9 +322,10 @@
                     <a href="#"> <i class="fa-brands fa-facebook-f"></i> </a>
                     <a href="#"> <i class="fa-brands fa-youtube"></i> </a>
                 </div>
-
+            
                 <div class="pt-4">
-                    <a class="btn btn-outline-light text-uppercase text-center" href="#">
+                    <a data-bs-toggle="modal" data-bs-target="#donateModal" class="btn bg-primary text-white text-uppercase"
+                        href="#">
                         <!-- <button type="button" class=""> -->
                         Instant Donate
                         <!-- </button> -->
@@ -325,9 +338,9 @@
         <div class="row">
             <nav class="navbar shadow bg-white fixed-top d-block d-lg-none">
                 <div class="container-fluid m-0">
-                    <a class="navbar-brand col-7 col-sm-6" href="#">
-                        <img loading="lazy" class="w-100"
-                            src="https://www.abdullahaid.org.uk/assets/images/aa-logo-color.png" alt="">
+                    <a class="navbar-brand col-7 col-sm-6" href="index.html">
+                        <img loading="lazy" class="w-100" src="https://www.abdullahaid.org.uk/assets/images/aa-logo-color.png"
+                            alt="">
                     </a>
                     <a href="/" class="" data-bs-toggle="offcanvas" data-bs-target="#aa_mobile_sidebar"
                         aria-controls="aa_mobile_sidebar" aria-label="Toggle navigation">
@@ -337,7 +350,7 @@
                         aria-labelledby="aa_mobile_sidebarLabel">
                         <div class="offcanvas-header">
                             <h5 class="offcanvas-title" id="aa_mobile_sidebarLabel">
-                                <a class="navbar-brand" href="#">
+                                <a class="navbar-brand" href="index.html">
                                     <img loading="lazy" class="w-75" src="assets/images/AA-logo-white.svg" alt="">
                                 </a>
                             </h5>
@@ -351,7 +364,7 @@
                                 <span class="text-capitalize pt-3">
                                     22 sep 2023
                                 </span>
-
+        
                             </div>
                             <div class="col-9 offset-2">
                                 <ul class="navbar-nav justify-content-end flex-grow-1 pe-3 pt-2">
@@ -359,10 +372,10 @@
                                         <a class="nav-link active" aria-current="page" href="/">Home</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" href="#">Info</a>
+                                        <a class="nav-link" href="donation-pending.html">Pending</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" href="#">News</a>
+                                        <a class="nav-link" href="donation-received.html">Received</a>
                                     </li>
                                     <li class="nav-item">
                                         <a class="nav-link" href="#">Volunteer</a>
@@ -374,39 +387,39 @@
                                         <a class="nav-link" href="#">Sign Up</a>
                                     </li>
                                     <li class="nav-item dropdown">
-                                        <a class="nav-link dropdown-toggle" href="#" role="button"
+                                        <a class="nav-link dropdown-toggle" href="our-projects.html" role="button"
                                             data-bs-toggle="dropdown" aria-expanded="false">
                                             Projects
                                         </a>
-                                        <ul class="dropdown-menu bg-primary">
+                                        <ul class="dropdown-menu bg-primary position-relative">
                                             <li><a class="dropdown-item" href="projects.html">Project 1</a></li>
                                             <li><a class="dropdown-item" href="projects.html">Project 2</a></li>
                                         </ul>
                                     </li>
                                     <img loading="lazy" class="my-2 w-75" src="assets/images/divider-line.png" alt="">
                                     <li class="nav-item dropdown">
-                                        <a class="nav-link dropdown-toggle" href="#" role="button"
-                                            data-bs-toggle="dropdown" aria-expanded="false">
+                                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                            aria-expanded="false">
                                             More
                                         </a>
-                                        <ul class="dropdown-menu bg-primary">
+                                        <ul class="dropdown-menu bg-primary position-relative">
                                             <li><a class="dropdown-item" href="donate.html">Donation Cart</a></li>
-                                            <li><a class="dropdown-item" href="project-detail.html">Project Detail</a>
-                                            </li>
+                                            <li><a class="dropdown-item" href="checkout.html">Checkout</a></li>
+                                            <li><a class="dropdown-item" href="project-detail.html">Project Detail</a></li>
                                             <li><a class="dropdown-item" href="events.html">Events</a></li>
-                                            <li><a class="dropdown-item" href="ways-to-donate.html">ways-to-donate</a>
-                                            </li>
+                                            <li><a class="dropdown-item" href="ways-to-donate.html">ways-to-donate</a></li>
+                                            <li><a class="dropdown-item" href="where-we-work.html">Where to Work</a></li>
                                         </ul>
                                     </li>
                                     <li class="nav-item">
                                         <a class="nav-link" href="photos.html">Photos</a>
                                     </li>
                                 </ul>
-
+        
                                 <!-- <div class="top_divider mt-3"></div> -->
-
+        
                                 <ul class="mobile_menu_social_icons d-flex list-unstyled pt-1 mt-1">
-
+        
                                     <li>
                                         <a href="#"> <i class="fa-brands fa-instagram"></i> </a>
                                     </li>
@@ -424,7 +437,6 @@
                                     </li>
                                 </ul>
                             </div>
-
                         </div>
                     </div>
                 </div>
