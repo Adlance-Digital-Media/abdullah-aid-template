@@ -119,14 +119,14 @@ option {
 
 .logo_container h1 {
     font-weight: 600;
-    font-size: 2.5rem;
+    font-size: 1.8rem;
     /* width: 40%; */
     line-height: 1.1;
     font-family: 'Area-Extended-Bold';
 }
 
 .instant_donate {
-    font-size: 20px;
+    font-size: 18px;
     font-family: 'Area-Extended-Black';
 }
 
@@ -1326,7 +1326,7 @@ p {
     }
 
     .logo_container h1 {
-        font-size: 2rem;
+        font-size: 1.4rem;
     }
 
     .donated_sub_project_title {
@@ -1395,7 +1395,7 @@ p {
     }
 
     .logo_container h1 {
-        font-size: 1.8rem;
+        font-size: 1.3rem;
     }
 }
 
